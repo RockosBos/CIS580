@@ -1,6 +1,1198 @@
 Repo,Message,Commit
+ARIndoorNav,"Added 2 versions of a Hough line transform and visualized results
+
+Version 1 does not work and Version 2 takes too much processing power at the moment. Adjusting thresholds and tweaking numbers will result in better performance.
+",8e28de4a8524a8130143643a646ef0402b1b7291
+ARIndoorNav,"Adjusted pose aligning method to be more reliable and faster
+
+The calculations for the target rotation and position have been tested and finalized.
+",ddd6e14eeda4b2a16846a4b3cde2fba892af9262
+BeerAmaze,"UI Optimized
+",83e4819aa8783649b243b49401b04659c09198ee
+ChemViewAR,"Improved all molecule rendering performance. Added NaCl test molecule.
+",d3400ba8921591a9a7dcd60d85a6c07c345c1309
+ChemViewAR,"Added improved ibuprofen structure for performance testing. Improved performance in MoleculeController script.
+",54ebcaf3644d4753f67cbd5d4b13402694b2a6f8
+ChemViewAR,"Added decimated ibuprofen model for performance testing
+",a54a44f0c874c97a93c5e27386e6774e91b7667e
+ChemViewAR,"Revert ""Revert ""Added destruction to selection sheet when faded out. Added decimated test model to see impact on performance on reducing faces in model""""
+
+This reverts commit 44997d580a61aafe3d235e414048dd296e61ffbd.
+",4421501a6a3f6de3388ff8c2ebb7c688054edcf4
+ChemViewAR,"Revert ""Added destruction to selection sheet when faded out. Added decimated test model to see impact on performance on reducing faces in model""
+
+This reverts commit 99eb8a28ef760915807159858b9d48872586cb69.
+",44997d580a61aafe3d235e414048dd296e61ffbd
+ChemViewAR,"Added destruction to selection sheet when faded out. Added decimated test model to see impact on performance on reducing faces in model
+",99eb8a28ef760915807159858b9d48872586cb69
+ChemViewAR,"Improved molecule physics rotation slow down. Added collisions to molecule selection list UI
+",46f245d49968340dbb7e12d919d8a3bedf854cf0
+cube-arena,"Flip performance ratings.
+",7b930d8660c6087d37d2f66f6542fa8a0a3a417e
+cube-arena,"Optimize settings. Add player number to screen.
+",ce45651013133f5c06fcc663538d028e547ab152
+cube-arena,"Optimize UI on HoloLens.
+",c858bb206fe9034e440f135d28c3756e7e87774d
+cube-arena,"Optimize spray effectiveness.
+",fb85cd5ae48e19519abddb4bdbf0b391d5aeb889
+cube-arena,"Optimize network transform thresholds.
+",191f73f8ff96c1b3fb78ebfed62f6f9025607854
+cube-arena,"Optimize NetworkTransform thresholds.
+",a90e9a57c89da4e593caef7f16a3357fb0ae84f9
+cube-arena,"Add TransformUtil performance tests.
+",d9d75d76f4432d04f22c3c0b937b583d0977dd1f
+cube-arena,"Optimize network thresholds.
+",92d91fe951c8a7352dfa0e03edd2bd30cdc98c19
+cube-arena,"Optimize rotaters.
+",3dabbadda9c741575025f60392db9af19a24d797
+Elektronik-Tools-2.0,"High-optimized observations
+",4fef6a1cabec0df39b0d0241294791ee9203306d
+Elektronik-Tools-2.0,"v3.0.0 (#16)
+
+* update to newer Unity, fixed bug with VRTK NullReference exception in VR mode.
+
+* serialization was changed from binary format to json format for better compatibility with future builds
+
+* removed useless constructor from Setting
+
+* added logo, files with maps can be associated with Elektronik
+
+* reworked slam map, tested online mode
+
+* removed some obsolete classes, offline reworking, gradient lines.
+
+* remove meta, some impls for gRPC and Protobuf
+
+* Initial implementation of protobuf protocol. Thread-safe clouds. Removed unused assets. *.meta files fix.
+
+* added plugins libraries, .gitattribute update
+
+* Added main thread invoker, fixed offline helmet movement, removed deprecated commands
+
+* increased performance, refactored namespaces, reworked containers, added container with connections managment, modified prototypes, example is test
+
+* Increased lines performance
+
+* new controls for free fly camera, added cxx tests, several fixes
+
+* added offline test
+
+* added usage documentation, cmake improvements
+
+* usage typo fix
+
+* merge fixes
+
+* csharp tests fix, added converter, added PacketPb extensions
+
+* Automatic protoc compiler moved to separate assembly, and now it can generate files even with compile errors in project
+
+* Now ProtocCompiler assembly compiles only for editor
+
+* Migration from SteamVR1.2.3+VRTK to SteamVR2.7.2
+
+* Updated to Unity 2020
+
+* SteamVR now working in Unity 2020
+
+* Now elektronik can draw planes
+
+* Infinite planes now works in online mode
+
+* Infinite planes now works in offline mode
+
+* Temporal scripts removed
+
+* Now user can disable planes rendering in settings
+
+* Elektronik now can receive and draw images from camera in online mode
+
+* Elektronik now can receive and draw images from camera in offline mode
+
+* New point cloud renderer
+
+* Elektronik now can render additional observation data
+
+also small gui changes
+
+* Optimisations for PointCloudRenderer
+
+* New optimisations. Now it can seamless render up to 4 millions points
+
+* Batched particle point cloud
+
+* Batched procedural GPU drawing
+
+* Now all types of clouds draws procedurally
+
+* Now points and connections work without SlamMap and Fast*Cloud classes.
+
+* Now one cloud renderer can be used by many containers. Also Observations work without SlamMap
+
+* Tracked objects work without SlamMap
+
+* Removed unused classes and fixed some warnings
+
+* Now user can disable some containers for render
+
+* Now user can change points size in runtime
+
+* Command chain in online mode now binds through unity editor
+
+* Create main.yaml
+
+* Fixes in name style
+
+* removed main.yaml
+
+* Fixed info banner
+
+* Changed arguments for containers events
+
+* Build script
+
+* Build script fixed
+
+* Build script fixed
+
+* Documentation. Image test
+
+* Documentation. relative links test
+
+* Documentation. Usage - russian
+
+* Documentation. Data - russian
+
+* Documentation. API - russian
+
+* Documentation. API - russian fixes
+
+* Documentation. English
+
+* Documentation. English fix
+
+* Settings logic changes
+
+* New File dialog
+
+* New File dialog fix
+
+* Now version is showing on every scene and auto increments on builds
+
+* Typo fixed
+
+* Fixed images in docs
+
+* Now version is showing on every scene and auto increments on builds
+
+* Version update
+
+* readme, license and .gitignore fixes
+
+* github actions workflow
+
+Co-authored-by: Pavel Krasnov <krasnovpavel0@gmail.com>",16dac9ac44b069a24ee15d3e6af76ba64042e410
+Elektronik-Tools-2.0,"Now points and connections work without SlamMap and Fast*Cloud classes.
+",8f394d674dc3e266b0957724779bd53024139292
+Elektronik-Tools-2.0,"Increased lines performance
+",18f22fd8b1e6468f88d2f4b748acb8e041cfa6e6
+Elektronik-Tools-2.0,"increased performance, refactored namespaces, reworked containers, added container with connections managment, modified prototypes, example is test
+",3e2d48175e87674775c9b7ca2f2efe51e535a30f
+Elektronik-Tools-2.0,"Memory and performance leak in set active subscription fixed
+",6970db7501dcfc168e65ada36a3eb4dd46209d2a
+Elektronik-Tools-2.0,"Merged PR 11: General reworking of packages handling code
+
+- Refactoring
+- massive refactoring of parsing and presenting
+- refactoring + added parser/presenter/commander for TrackingPackage
+- code cleanup
+- Some fixes. Found bug at the final event.
+- some fixes for manager
+- new object pool, fixed helmet instantiation other fixes
+- refactoring + fix package info view (this fix need to be improved because of low performance)
+- small refactoring
+- fixed displaying info about packages
+- fixes for exceptions + settings rework
+- small scene fix
+",7af730736273d235244b3b4676e3833e6924fd69
+Elektronik-Tools-2.0,"refactoring + fix package info view (this fix need to be improved because of low performance)
+",e66216b01751f234571ca42c73fec731a8b4545d
+Elektronik-Tools-2.0,"updated Unity, accelerated mesh updates, accelerated online mode
+",d5225f27bf3ce3b8c8cc2dfd4d2618123331b99e
+Elektronik-Tools-2.0,"Merged PR 9: Enabled VR features
+
+- added ForEach feature to MF_AutoPool, new UI features, implemented checkboxes in Workarea scene, implemented setup SDKs for different modes (offline/online), added Elektronk SDK Object Alias, other fixes
+- scene changes
+- VRHacker so close
+- fixed VRHacker, updated UniRX, updated VRTK, UI improvements
+- VRHacker changes
+- added direct loading of OMW
+- works on Container for observations graph
+- first implementation of observation container
+- fixed bug with cancellation for observations graph
+- small optimization/refactoring
+- old observations graph class was removed
+- fixed build fail
+- fixed null reference exception on point cloud
+- fixed log events
+- fixed problem with log creation when Log folder didn't exist
+- Accelerated online
+- more performance and fixes, online VR for Steam
+- Removed useless VR settings UI
+- Migration to .NET 4.x Mono, accelerated files parsing, removed as deprecated GUI Console.
+- Slider fixes, VR fixes, removed obsolete classes, other
+- Hacker fix
+",58500378902620234fc414c521369316f21641f8
+Elektronik-Tools-2.0,"Migration to .NET 4.x Mono, accelerated files parsing, removed as deprecated GUI Console.
+",77e1f4c3165c7d7d2dee18ec995c6e7f5abaa016
+Elektronik-Tools-2.0,"more performance and fixes, online VR for Steam
+",2a84fc88dd812e34c7c6dc292ba70ebe12eac82f
+Elektronik-Tools-2.0,"Accelerated online
+",d8cd95c7c0fcda0a94b120c9f6df73c6c34a4092
+Elektronik-Tools-2.0,"common interface for fast point clouds, common interafece for point clouds meshes, common interface for SlamObjects, refactoring
+",c6b8b98f26288cd4c2c1b4abb7f0d51732452638
+Elektronik-Tools-2.0,"fast observations
+",116cd85ab5e218f4a3b3b8372aaccf45f8d95549
+Elektronik-Tools-2.0,"fast cloud of observations
+",3ad4909d90c5b28d107c29fb7c1e5ef2dd2dc8d1
+Elektronik-Tools-2.0,"Increased performance, added lines cloud
+",140b6644c5eb399274dd7639e97ad7c2fe46c4f1
+Elektronik-Tools-2.0,"Added fast point cloud
+",deb34ead13092d19fd1ccb57072ca31c67ce3ed8
 EscapeMuseumVR,"refactor: Optimized the use of port animation
 ",d43672e70735613321d08a5904513a995bd1a633
+final-project-prefabulous,"Made well fill bucket faster, and sunflower takes more water to grow.
+",7019b29b674406edeeed77ebb17641578fe24597
+final-project-prefabulous,"Made well fill can faster for more believable filling
+",aabd093b0b4ea1f9a7b35756f04658a0733050f4
+flori-vr,"Made well fill bucket faster, and sunflower takes more water to grow.
+",7019b29b674406edeeed77ebb17641578fe24597
+flori-vr,"Made well fill can faster for more believable filling
+",aabd093b0b4ea1f9a7b35756f04658a0733050f4
+gaze_lanterns,"Preparation for Heatmap demo: Moved recording to main thread to improve performance.
+",f9b910972f3c8efc5a849f39f3be440a1a6e96e1
+Huis-van-morgen,"BAM House
+
+Performance improvement (surrounding houses updated)
+",36e2d9fd2de6a8a3e44a2609915d00f7155344e1
+jet-dash-vr,"refactor(#133): make the starting and slower ships faster
+
+",fa0a11160b473e976646deeb9641cd8fc3219a85
+jet-dash-vr,"feat(#82): speed up and slow down boosts
+
+",a0d1cf4373e030f1576ff80335e57a10fd71f5c5
+jet-dash-vr,"feat(#82): update slow down value
+",e07e8157851a0545b1fdacb5ca58f6d7de85d792
+jet-dash-vr,"test(#82): add slow down powerup tests
+",7832c2aa872a40ce9d27579cad65557d915dd2b9
+jet-dash-vr,"test(#82): add slow down powerup
+",98f40c174dc3725a95b487fab091dbc76812b023
+jet-dash-vr,"test(#82): add speed up powerup tests
+",63bf63ec9e7f4166ef4d9d8fa0a4a4c2c5b8ad54
+jet-dash-vr,"feat(#82): add speed up to powerup spawner
+",97cccb77fd570359e5ab079bac69cc3a2e6e00db
+jet-dash-vr,"feat(#82): add collision to speed up powerup
+",87a03e4eae8ac031f4b4c6939a77729802037317
+jet-dash-vr,"feat(#82): add speed up powerup model
+",154423069e9fee9e64a334814dc621cd0c4ca35d
+jet-dash-vr,"💎 Performance updates on PlayerHud
+",f195d40c7fb41ab20e7c96d6dbffeaf7911d5514
+jet-dash-vr,"💎 Performance updates on PlayerCollision
+",538505cd7a0423a20128434c057d14662eaf2d9e
+jet-dash-vr,"💎 Performance updates on PlayerScore
+",c50967fbc783673ed3599042793f9a52dab8cb17
+jet-dash-vr,"💎 Performance updates on PlayerControl
+",ffec488fcefd844458dbb6cfbdbed378fb9429e3
+jet-dash-vr,"💻 Increase the field of view of the camera to make it look like we are going really fast
+",91e88d8ac0f7c7f390c3cebbb762ca98acfc8afc
+MixedRealityToolkit-Unity,"Better handling for excessproximity lights (#10241)
+
+Previously, if the shader's maximum proximity light limit was reached, a warning would be logged and the lights discarded. I've changed this to keep all lights around on the CPU side and only send the first two valid ones to the shader. This helps with race conditions where multiple lights are added and removed in a single frame and eliminates a warning that was spamming to the log and degrading performance.
+
+Co-authored-by: Roger Liu <roliu@microsoft.com>",d8beb6596f8b7b5ac84b738c717892deb6a6c0d4
+MixedRealityToolkit-Unity,"SpherePointer query optimization (#10324)
+
+* SpherePointer query optimization
+
+The SpherePointer performs multiple queries per frame at times and with every collider returned it performs a costly GetComponent call on the collider to retrieve the NearInteractionGrabbable component.
+
+This PR optimizes that logic by adding a LRU cache to the SpherePointer to cache the retrieved NearInteractionGrabbable component. The cache holds a user defined number of entries, and the cache is purged when the SpherePointer is destroyed.
+
+Editor mode unit tests are implemented for the new utilities class LRUCache.
+
+* fixing lingering namespace issues
+
+* fixed bug where the currentGrabable wasn't cached
+
+* fixed grablayermasktest
+
+* Update Assets/MRTK/SDK/Features/Utilities/LRUCache.cs
+
+Co-authored-by: Kurtis <kurtie@microsoft.com>
+
+* Make LRUCache internal rather than public
+
+Co-authored-by: Charles Wan <chaw@microsoft.com>
+Co-authored-by: Roger Liu <roliu@microsoft.com>
+Co-authored-by: Kurtis <kurtie@microsoft.com>",40894a69fd0051e47446f96e7df36362de12d8d4
+MixedRealityToolkit-Unity,"Merge pull request #9193 from MaxWang-MS/improve_perf
+
+Improving performance for ScrollingObjectCollection",f44531c5faec443c936ac8e6600202fa88617d6c
+MixedRealityToolkit-Unity,"Moving Scene Query code out of the Focus Provider. Improved Sphere Pointer performance (#10146)
+
+* initial commit for improving scene query performance
+
+* adding focus provider changes
+
+* sanitized other changes to pointer code, got unit tests passing, though at the loss of the performance gains
+
+* cached sphere pointer results during pre-scene query
+
+* removed extraneous files
+
+* removing last bits of test code
+
+* fixed errors on remaining unit tests
+
+* removing test code
+
+* fixed isse with IsNearObject flag
+
+* Update Assets/MRTK/Core/Interfaces/InputSystem/IMixedRealityPointer.cs
+
+Co-authored-by: Kurtis <kurtie@microsoft.com>
+
+* Update Assets/MRTK/Tests/EditModeTests/InputSystem/TestPointer.cs
+
+Co-authored-by: Kurtis <kurtie@microsoft.com>
+
+* updating pointers so scenequery is located in a new interface
+
+* updated focus provider with new pattern part 2
+
+* updated the poke and sphere pointer's layer mask's to have more consistent behavior with regards to PrioritizedLayerMasks
+
+* neatly seperated out old and new methods of querying the scene
+
+* Updated interfaces to remove redundancies
+
+* Update Assets/MRTK/SDK/Features/UX/Scripts/Pointers/BaseControllerPointer.cs
+
+Co-authored-by: Kurtis <kurtie@microsoft.com>
+
+* Update Assets/MRTK/SDK/Features/UX/Scripts/Pointers/BaseControllerPointer.cs
+
+Co-authored-by: Kurtis <kurtie@microsoft.com>
+
+* Update Assets/MRTK/SDK/Features/UX/Scripts/Pointers/PokePointer.cs
+
+Co-authored-by: Kurtis <kurtie@microsoft.com>
+
+* Update Assets/MRTK/SDK/Features/UX/Scripts/Pointers/SpherePointer.cs
+
+Co-authored-by: Kurtis <kurtie@microsoft.com>
+
+* fixing whitespace nits
+
+* fixed bug for flickering bounds unit test
+
+* fixed edge case and commented on the offending variable
+
+Co-authored-by: Kurtis <kurtie@microsoft.com>",35bab7a23507c67b95e39d2ebf43a645cd1e194c
+MixedRealityToolkit-Unity,"Merge pull request #9992 from fast-slow-still/offsetTests
+
+Offset tests",0d10418919aadc349f908b66e846af1d1458287f
+MixedRealityToolkit-Unity,"Increased the frame wait timer to account for Holographic Remoting latency (#9879)
+
+* Increased the frame wait timer to account for Holographic Remoting latency
+
+* Small adjustment to unit test timing
+
+* fixed typo",4e932c4592d0a4968d05c772bac21119db2f88d9
+MixedRealityToolkit-Unity,"Merge pull request #9875 from fast-slow-still/hands2.7.0
+
+Fix for OpenXR hand meshes with non-identity transform on Playspace.",afe6c7e4182be1b0fc49a98bd76e8aa377bd4378
+MixedRealityToolkit-Unity,"Merge pull request #9820 from davidkline-ms/pick9819
+
+Merge pull request #9819 from fast-slow-still/spatFix",3da57014470a454b16816a09183bf2200bdb54a1
+MixedRealityToolkit-Unity,"Merge pull request #9819 from fast-slow-still/spatFix
+
+Correct parenting of spatial mesh to preserve local transform.",a3bdfd409d3fa6b7c6d7be39d8bd61e297a4ee65
+MixedRealityToolkit-Unity,"Merge pull request #9819 from fast-slow-still/spatFix
+
+Correct parenting of spatial mesh to preserve local transform.",969c7d18e24186704fc8eedc641be0efe34aa74b
+MixedRealityToolkit-Unity,"Merge pull request #9759 from mbeagley-MS/SolverAllocationFix
+
+Improve solver performance",c83f020c6c2923f12518d0854e2fe1ae94a257a3
+MixedRealityToolkit-Unity,"reuse arrays unless length changes and elim parallel for (>4000 iterations is 1.4ish ms faster with a serial for)
+",d1d9aecdcbfa24c6c51dc0a9be0d4164211ea438
+MixedRealityToolkit-Unity,"Scrolling object collection enable/disables renderers instead of gameobjects (#9192)
+
+* changed scrolling object collection behavior to enable/disable renderer component rather than the entire gameobject
+
+* added missing test changes
+
+* added performance variables that let users choose between the old and new behaviors
+
+* Updated inspector with new performance options
+
+* Updated tests to cover the new and old settings
+
+* Update Assets/MRTK/SDK/Features/UX/Scripts/ScrollingObjectCollection/ScrollingObjectCollection.cs
+
+Co-authored-by: CDiaz-MS <53493796+CDiaz-MS@users.noreply.github.com>
+
+* Update Assets/MRTK/SDK/Features/UX/Scripts/ScrollingObjectCollection/ScrollingObjectCollection.cs
+
+Co-authored-by: CDiaz-MS <53493796+CDiaz-MS@users.noreply.github.com>
+
+* PR feedback
+
+Co-authored-by: CDiaz-MS <53493796+CDiaz-MS@users.noreply.github.com>",d0e17f8043aa49583c20f95c48f7d5c9f70c6145
+MixedRealityToolkit-Unity,"Merge pull request #9221 from davidkline-ms/optWindow7897
+
+add note of tools package requirement for optimize window",4ef89905c2e7fb28d8d645611cb08f8c8de9a446
+MixedRealityToolkit-Unity,"add note of tools package requirement for optimize window
+",ca66d6d0769f2b902659d2242bef6c549a15574a
+MixedRealityToolkit-Unity,"Merge branch 'mrtk_development' into performance_improvements
+",d30b9b22d23492cd497c3f71e2150814a99416b3
+MixedRealityToolkit-Unity,"Performance improvements for CoreServices, ClippingPrimitive and, mostly, for ScrollingObjectCollection.
+",cb5b2b755d4bd0e1c1b79223f843c850c996feda
+MixedRealityToolkit-Unity,"Merge pull request #9050 from fast-slow-still/gazePlayspace
+
+Apply playspace transform to eye gaze data",a03e5e2e0c9e28c889c8df5c7436de506b59b0ce
+MixedRealityToolkit-Unity,"Merge pull request #8905 from DominicAglialoro/user/doaglial/input_recording_service
+
+Improved Input Recording Service With Eye Gaze and Optimized Recording",61b5fb1d5bf3a0b015eba1ec1206052d9ffc686b
+MixedRealityToolkit-Unity,"Merge pull request #8929 from fast-slow-still/xrSpat
+
+Remove unnecessary PlayspaceAdapter",6a4d7a20ad5671e50d61000e4590b8ffda36c8af
+MixedRealityToolkit-Unity,"Initial code to fix Issue 8344: Add reading mode support to the Unity camera for HoloLens 2
+
+This code adds a ""projection override"" mode to the main camera.  It reduces the system's FOV but eliminates a scaling of Unity's output.  So a pixel rendered by Unity will correspond to a projected pixel on HoloLens 2.  Application authors should do tests with multiple individuals to be sure this is a tradeoff they want in their app.
+
+This mode is not something you want enabled for the lifetime of the app.  It should be enabled when necessary - only when smaller details need to be sharper.  This mode should stay disabled otherwise to maintain then larger FOV
+
+There is currently a bug (as of Unity 2019.4.5) where Unity doesn't fully use the adjusted projection when the ""Stereo Rendering Mode"" is ""Single Pass Instanced.""  Until that is fixed, you can work around it by changing to ""Multi Pass.""  This mode will have some performance impact for the entire app experience, not just when Projection Override is enabled.
+
+Code changes:
+* Add ProjectionOverrideEnabled to IMixedRealityCameraSystem and implement it in MixedRealityCameraSystem.
+* Add ProjectionOverride MonoBehavior that does the actual Projection Override
+* Add ProjectionOptionsDemo scene to demonstrate the change.
+",e77659cca98fe3e7031436db57c4a6420be37cc2
+MixedRealityToolkit-Unity,"Initial code to fix Issue 8344: Add reading mode support to the Unity camera for HoloLens 2
+
+This code adds a ""projection override"" mode to the main camera.  It reduces the system's FOV but eliminates a scaling of Unity's output.  So a pixel rendered by Unity will correspond to a projected pixel on HoloLens 2.  Application authors should do tests with multiple individuals to be sure this is a tradeoff they want in their app.
+
+This mode is not something you want enabled for the lifetime of the app.  It should be enabled when necessary - only when smaller details need to be sharper.  This mode should stay disabled otherwise to maintain then larger FOV
+
+There is currently a bug (as of Unity 2019.4.5) where Unity doesn't fully use the adjusted projection when the ""Stereo Rendering Mode"" is ""Single Pass Instanced.""  Until that is fixed, you can work around it by changing to ""Multi Pass.""  This mode will have some performance impact for the entire app experience, not just when Projection Override is enabled.
+
+Code changes:
+* Add ProjectionOverrideEnabled to IMixedRealityCameraSystem and implement it in MixedRealityCameraSystem.
+* Add ProjectionOverride MonoBehavior that does the actual Projection Override
+* Add ProjectionOptionsDemo scene to demonstrate the change.
+",1914dc3266a969d7bcd21f242c7c976ea11527ef
+MixedRealityToolkit-Unity,"Improving clipping primitive performance and deleting instanced materials
+",5e3c041ebb55b38c26ddbd5366eddec1573e3504
+MixedRealityToolkit-Unity,"Merge pull request #8322 from keveleigh/compile-out-2020-utils
+
+Compile out non-2020-compliant code in MixedRealityOptimizeUtils",fb252e6443f7efdfb90feb162c7aa6bcf00cf4c3
+MixedRealityToolkit-Unity,"Merge pull request #8256 from fast-slow-still/offsetPlayspace
+
+Update tests to be more sensitive to camera transform",ed59c9429c3d6dc86e1a7a12eb117a25ac1caa43
+MixedRealityToolkit-Unity,"put back tasks disabled for faster testing
+",f6bbc5dada05a155cdfa0a8ea7ba7293c22f5972
+MixedRealityToolkit-Unity,"Merge pull request #8251 from fast-slow-still/camScale
+
+Fix spatial awareness mesh w.r.t. camera scale",4d834fad529bce2481a7127f599336b2eb6a848c
+MixedRealityToolkit-Unity,"Speed up rotation joystick / decouple scale and rotation from floor object
+",faf35a572575ce558a4c5e7b81e39bc2a14e46a6
+MixedRealityToolkit-Unity,"Merge pull request #7832 from keveleigh/update-optimize-window-ui
+
+Update Optimize Window UI to respect editor theme",2c7ef7b100cb5e71304227840356f4519568cf00
+MixedRealityToolkit-Unity,"Merge pull request #7708 from fast-slow-still/handDisplayFix
+
+Fold in Playspace transform into hand mesh display",ee6cbf9883b311b8f8c3f725d885bf6a051818d1
+MixedRealityToolkit-Unity,"Fixed more of the tests; missed the second test function that contained the slower yield calls.
+",cdb1e25a0b5fcbbd93609d346f4c1b18fbd5bc3f
+MixedRealityToolkit-Unity,"Merge pull request #7680 from davidkline-ms/instrumentationDocs
+
+Add instrumentation recommendation to performance getting started page.
+
+Note: merging before validation is complete as it is a docs change only and the full validation pass was triggered in error.",1e665b5de9cb2b7887e4127f8b72497caf8a8020
+MixedRealityToolkit-Unity,"Merge pull request #7671 from davidkline-ms/instrumentationDocs
+
+Add profiler instrumentation to data provider and performance documentation",c99f5183131b61f656137896ba5f40f3b97b5e23
+MixedRealityToolkit-Unity,"Update Documentation/Performance/PerfGettingStarted.md
+
+Co-Authored-By: Kurtis <kurtie@microsoft.com>",fe2528f9287fd459aa1fa0577717d6e1eb81ebf5
+MixedRealityToolkit-Unity,"Update Documentation/Performance/PerfGettingStarted.md
+
+Co-Authored-By: Kurtis <kurtie@microsoft.com>",843128258c0dd2ae4c135564e96c5702955d109c
+MixedRealityToolkit-Unity,"Merge pull request #7605 from davidkline-ms/reduceRaycastAllocs
+
+Reduce raycast allocations, update performance markers",1c25d77bf7057f79c6b564332c23d5bfe5671123
+MixedRealityToolkit-Unity,"Merge pull request #7532 from Troy-Ferrell/users/trferrel/hand-perf-investigation
+
+Improve Hand Mesh Performance",733e7615c4adfd9c4878c0a125dbc77a8f18d877
+MixedRealityToolkit-Unity,Update Documentation/Performance/PerfGettingStarted.md,fe5dd7453b7dd31967226b04d57b086ff4912886
+MixedRealityToolkit-Unity,"Checking the Optimize Mesh Data setting at build time. (#7516)
+
+* Checking the Optimize Mesh Data setting at build time.",e6892f60795690886b96c7eff010c0600014543b
+MixedRealityToolkit-Unity,"works but slow, not moving on off threads well
+",a6bda605b3d5554a24a0c6454e10eef06aa1f09b
+MixedRealityToolkit-Unity,"Merge pull request #7053 from keveleigh/cherrypick-261ef0c2732b2f75869c3a368281444b683df12e
+
+Cherrypick PR #7039 from wiwei/fastervalidation to stabilization",06e5f6e206f567c8e4d9e54e4892a25861fac374
+MixedRealityToolkit-Unity,"Merge pull request #7039 from wiwei/fastervalidation
+
+Speed up the PR validation pipeline
+",fd78056bc644251cea9ed3f37d7e8ca34b1c609c
+MixedRealityToolkit-Unity,"Merge pull request #7039 from wiwei/fastervalidation
+
+Speed up the PR validation pipeline",261ef0c2732b2f75869c3a368281444b683df12e
+MixedRealityToolkit-Unity,Merge branch 'mrtk_development' into fastervalidation,e3285d643de71c91cb07b53880bfabdbdf669564
+MixedRealityToolkit-Unity,"Merge pull request #6990 from keveleigh/xr-sdk-cherrypicks
+
+BaseSpatialMeshObserver and MixedRealityOptimizeUtils updates for XR SDK",d2aaa45b7d749d560ef11c928965bda19e2c3caa
+MixedRealityToolkit-Unity,"Merge pull request #6863 from Troy-Ferrell/users/trferrel/line-pointer-refactor-v2
+
+Line pointer refactor for performance",eee7a55e3cfd99526f20ecdbde34480990bf2a5d
+MixedRealityToolkit-Unity,"Update MixedRealityOptimizeUtils.cs
+",0d660a24c78341dd14a6d3196f875b2a52905a2a
+MixedRealityToolkit-Unity,"Update OptimizeUtils #ifdef, spelling, and formatting
+",c54106dbfad0d7159a1e614ec99db5cdc6fca6ff
+MixedRealityToolkit-Unity,"Update comments and add a safeguard for forgotten PlayModeTestUtilities.UseSlowTestHand settings.
+",77b5ede6f3857b8d1f5b5db7a213ea7894b79b40
+MixedRealityToolkit-Unity,"Merge pull request #6959 from ms738/patch-26
+
+Update OptimizeWindow.md",77538b642e7cf6800754616757180e9a4bd7782a
+MixedRealityToolkit-Unity,Update OptimizeWindow.md,4cbe3c9113a0b031493e96bfae4ecda114f9319c
+MixedRealityToolkit-Unity,"Improve line renderer performance in shell hand ray default
+",95bfb5b19f9c1300a2139afb92621814e38a9b36
+MixedRealityToolkit-Unity,"Merge branch 'mrtk_development' into users/trferrel/guienabledwrapper-obsolete
+
+# Conflicts:
+#	Assets/MixedRealityToolkit.Tools/OptimizeWindow/MixedRealityOptimizeWindow.cs
+",f1ef1bde8112d6eb767723a7574d678974e9759a
+MixedRealityToolkit-Unity,"Merge pull request #6838 from Troy-Ferrell/users/trferrel/optimize-window-update
+
+Optimize Window Update",7fafb07345a8be0b469395b236fffd06e45287d4
+MixedRealityToolkit-Unity,"Merge branch 'users/trferrel/optimize-window-update' of https://github.com/Troy-Ferrell/MixedRealityToolkit-Unity into users/trferrel/optimize-window-update
+",28038e76c1ac27a1bd8d2d84d9ea8ed276c48284
+MixedRealityToolkit-Unity,"Update Documentation/Tools/OptimizeWindow.md
+
+Co-Authored-By: Bernadette Thalhammer <36998103+thalbern@users.noreply.github.com>",fa1e866a2792a86d760b5cc934c3bd74a9f68a0e
+MixedRealityToolkit-Unity,"Update Documentation/Tools/OptimizeWindow.md
+
+Co-Authored-By: Bernadette Thalhammer <36998103+thalbern@users.noreply.github.com>",2e3aa3d40d1db247bcaf7e4ff8580bfcd99a7a0a
+MixedRealityToolkit-Unity,"Merge pull request #6784 from Troy-Ferrell/users/trferrel/optimize-handmeshjoints
+
+Create optimize materials for hand joint mesh visualization",5330d91c139eeed142f6bdb43988225bdde5ea80
+MixedRealityToolkit-Unity,"Create optimize materials for hand joint mesh visualization
+",6677caced4c04cb2049a28541c625070c79dcabd
+MixedRealityToolkit-Unity,"Move validatecode to be the first thing that runs, to fail fast if there's an issue
+",d3b312d772edc36917281cb19fff69f6e1644913
+MixedRealityToolkit-Unity,"do not optimize away arfoundation camera system code
+",7bffa7f1cff62e7262f5652162a679ca5ec6611e
+MixedRealityToolkit-Unity,"added method for registering a scale handler during runtime and removed component lookup in update (was slowing down performance of bb interaction)
+created default material for bb handles and added to resource folder of boundscontrol
+",e8e42f957a051fc98c1ebf676b350d22d2403464
+MixedRealityToolkit-Unity,"Merge pull request #6122 from Railboy/mrtk_profile_inspector_perf
+
+MRTK Profile Inspector Performance Improvements",363cd9266afc1351ea09a38e8a0c8acd2d57edb9
+MixedRealityToolkit-Unity,"Update perf docs and optimize window
+",18cc4e7a8f9e480c4fd9b2db854c420e25f21835
+MixedRealityToolkit-Unity,"Performance improvements for MRTK profile inspectors
+",538ea7b29df9d86dfb3e6cec070b602b5c546bde
+MixedRealityToolkit-Unity,"Update the MRTK runtime to not allocate a new list on each Update loop.
+
+https://github.com/microsoft/MixedRealityToolkit-Unity/issues/5942
+
+The core MRTK update loop was allocating a new List<> (actually, two, if you look at both Update and LateUpdate). This is because each call to MixedRealityServiceRegistry wasn't being cached. In addition, LINQ adds its own GC overhead (i.e. after re-creating the same identical list, the same list was then sorted again... and again... and again...)
+
+This change avoids that by updating the GetAllServices call to return a cached list of services, which are sorted in priority order. That way the MRTK instead of having to re-copy and resort, can just use the same list on every single frame.
+
+I had also considered keeping the original ""sort order"" (i.e. random, or actually, insertion order into the registry) but we never formally defined what the ordering of elements was here, and the prime and most important scenario here depends on it being priority order sorted, so we may as well optimize for that use case.
+
+I didn't fully get rid of LINQ (note that the Reverse operation still uses LINQ) - this is okay because it's only in the shutdown path. Alternatively I could have changed the function signature of GetAllServices to be IReadOnlyList, but this would have been a breaking change for not a lot of value.
+",c5e6cca105fb695ee9870e41311d491b5ebceb8c
+MixedRealityToolkit-Unity,"Unified input methods and new features for input simulation (#5853)
+
+* New icons in the viewport for input simulation control.
+
+* Add buttons to the simulation icons to toggle hands.
+
+* Set initial hand position to screen center when not controlling hands with mouse.
+
+* New profile settings for camera roll.
+
+* Additional buttons for resetting hand rotations.
+
+* Switch hand sim state to normalized viewport coordinates instead of screen pixels.
+
+* Change simulated hand state to use a quaternion for rotation instead of euler angles.
+
+* Add a generic reset function for the simulated hand state.
+
+* Update the input sim service getter to the new DataProvider API.
+
+* Move and repurpose the input recording window for general input simulation.
+
+* Display hand state variables during simulation in the editor window.
+
+* Expose hand rotation in the simulation window.
+
+* Apply hand rotation in a turntable fashion with roll around the wrist.
+
+* Add hand positions.
+
+* Make hand sim mode a property of sim service, profile only defines the default.
+
+This allows changing the hand simulation mode at runtime without modifying the profile.
+
+* Use wrist rotation as default so euler offset can be applied in view space.
+
+* New KeyBinding utility to encode key and mouse bindings consistently.
+
+* Buttons for selecting key binding directly, since shift is not detectable.
+
+* Simplify enum for key bindings.
+
+* Change all KeyCode entries in the input sim profile to KeyBinding.
+
+* Move input simulation implementation classes into a separate assembly.
+
+* Fix profiles referencing the input simulation and playback services.
+
+* Fix outdated keyCode in input sim profile.
+
+* Display simple head transform in the input sim window.
+
+* Add a 3rd axis for up/down movement of the camera with input simulation.
+
+* Unified mouse delta computation for input simulation.
+
+* Disable camera control while controlling hands, so RMB can be used for both.
+
+* New utility class to manage mouse cursor state during rotation.
+
+* Temp: Use MouseRotationProvider in the hand data provider too.
+
+* Manage static mouse rotation changes by refcounting started mouse rotations.
+
+* Remove keyboard hand rotation keys from the profile.
+
+* Adjust mouse scroll sensitivity.
+
+* Do either translation or rotation by mouse, but not both at the same time.
+
+* Properly declare scrollwheel as the Z mouse axis in the profile.
+
+* Apply mouseDelta z value (scroll) as hand roll.
+
+* Compute screen, viewport and world mouse delta consistently.
+
+* Support camera roll using the scroll wheel.
+
+* Separate rotation key for hand rotation from camera rotation.
+
+* Update camera control section of docs.
+
+* Update hand section of input simulation docs.
+
+* Update the input animation recording docs.
+
+* Fix scroll speed for moving the mouse, was using world instead of viewport units.
+
+* Add explanation of the viewport hand indicators to docs.
+
+* Change the color of hand indicators to blue.
+
+* Declare new input axes at the end of the array in case users have hardcoded index dependencies.
+
+* Add missing doccomments for InputSimulationIndicators script.
+
+* Remove unused variables.
+
+* Minor KeyBinding inspector change so the internal Code property is no longer needed.
+
+* Move input simulation service back into the Editor assembly for now.
+
+File move should happen in a separate commit for clean move history.
+
+* Change the default hand rotation key to LeftControl and allow simultaneous hand and head rotation.
+
+* Fix code comments.
+
+* Comments for KeyBindingPopupWindow.
+
+* Comments for KeyBindingInspector.
+
+* Add missing doccomments for public functions and profile fields.
+
+* Comment for input sim indicators Update function.
+
+* Minor documentation cleanup.
+
+* Delete incorrect comment line.
+
+* Set FormerlySerializedAs for the handSimulationMode profile field.
+
+* Add a section in the Upgrading doc to list breaking profile changes.
+
+* Use a separate mouse rotation factor for hand rotation, with a larger default.
+
+Camera rotation is relatively slow, hands should react more quickly.
+
+* Group common input settings together.
+
+* Add documentation for how to change rotation speed with the mouse.
+
+* Update new ManipulationHandler tests for profile changes.
+
+* Disable the InputSimulationIndicators script on non-editor platforms.
+
+This script requires the IInputSimulationService interface, which is only available for editor builds at this point.
+
+* Revert unwanted changes to the input simulation profiles.
+
+* Fix rotation passed to ArticulatedHandPose by tests.
+
+* Fix hand rotation order in tests to apply world-space rotations correctly.
+",85d0da5510b5001b7e399f4c28477de1db24767c
+MixedRealityToolkit-Unity,"Add build option for Unsafe Code (#5879)
+
+This is a follow up that is useful for issue #5879. Research mode is usually used in combination with computer vision, for which performance is crucial. Therefor unsafe code for direct memory access is needed. With this changes unsafe code can simply be enabled with a checkbox in the unity build window. Like with research mode this checkbox is only visible if the build target is UWP and the targeted device is Hololens.",47b5e3d63f995c5e909652f0811598cd11c4f5db
+MixedRealityToolkit-Unity,"Faster types
+",29b83777544d19f67e29a95d1188a2b8db977778
+MixedRealityToolkit-Unity,"Turn off hand rays only when hand is near a grabbable object (#5823)
+
+## Overview
+If the hand is near the spatial mesh (SR), hand rays should not turn off. In fact, rays should only turn off if the hand is near a grabbable or touchable thing. This PR updates SpherePointer to return `IsNearObject` and `IsInteractionEnabled` only when the hand is near a collider that has a NearInteractionGrabbable on it. It also adds Grab Layer Masks, which allows developers to further prioritize and filter which objects a pointer can interact with. 
+
+After this change, an object must both be on a Grabbable Layer as well as have a NearInteractionGrabbable component in order for hand rays to turn off. The Grabbable Layer is by default set to everything **except** Ignore Raycast and Spatial Awareness.
+
+Fixes: #5748, #4203, #5621 
+
+## Changes
+- Add a Grabbable Layer Mask to Sphere Pointer to allow devs to easily disable all grabbable objects, and to improve performance
+- The default Grabbale Layer Mask for the grab pointer is everything but Ignore Raycast and Spatial Awareness so that sphere casts don't check the spatial mesh (for perf).
+- I also am caching the sphere query results to ensure we only do 3 sphere casts per frame (down from 11 without caching).
+-  I snuck in a fix to pointer locking -- previously a pointer would lock when you clicked on any collidable, even if the collidable did not actually have any pointer handlers on it, or above it. now, the pointer will only lock if the pointer is actually grabbing an object that would handle pointer events. I may actually end up pulling that change into a separate PR.
+- Add tests to verify my fix, and documentation reflecting the new grabbable behavior
+- I also fixed the sphere pointer inspector -- it was actually not displaying several sphere pointer fields that it should have
+- I removed the DebugSphere because it was not very useful, added a bit of extra code, and had bugs (did not turn off when debugsphere == false).
+
+## Verification
+- All playmode tests pass, new tests pass
+- Verified that my new tests would have failed in old code
+- Verified that my change actually fixes the bug (ray no longer hides when near SR)
+- Runs on HoloLens 2 with no adverse perf impact.",b709083420f75723b9d0286583078b39ac506637
+MixedRealityToolkit-Unity,"Merge pull request #5769 from Troy-Ferrell/users/trferrel/optimize-doc-cleanup
+
+Optimize window doc cleanup",1367f0aab59b9222c1fe1a1e1216f5a0aa8cbc83
+MixedRealityToolkit-Unity,"Fix optimize window docs and minor tweaks to inputevents
+",ebaa51f31963faf90283a483f490a54164acfddc
+MixedRealityToolkit-Unity,"Make SolverTests faster
+",618d28b4958e9444214b992f775e36d850025baa
+MixedRealityToolkit-Unity,"Minor update
+
+""Hence, you can process multiple inputs at once. For example, combine fast eye targeting with hand gestures."" 
+->
+""Hence, you can process multiple inputs at once - for example, combining fast eye targeting with hand gestures.""",e3b2065751ceaf888fc364967188e55170d10d95
+MixedRealityToolkit-Unity,"Optimized the values.
+",c99b7e07c6ca45c8e43ef3cc8ded57f99beb20a5
+MixedRealityToolkit-Unity,"Merge pull request #5389 from microsoft/MRTK-standard-shader-doc-update
+
+Update MRTK Standard shader doc for performance section",8b6c2a030b249fd801c303f3a663b8a8e38c5b94
+MixedRealityToolkit-Unity,"Update MRTK Standard shader doc for performance section
+
+Copied over performance content related to MRTK Standard shader from the performance doc to the MRTK standard shader doc",3d82091934e33f578c777f12f3006c20bf4cbe43
+MixedRealityToolkit-Unity,"Update optimize check to EditorSettings class, add preference capability to turn off warnings
+",be8e23e753c6783d70c7ac6853f82dc1d5661e69
+MixedRealityToolkit-Unity,"Merge pull request #5199 from Troy-Ferrell/users/trferrel/doc-updates
+
+Updated MRTK Optimize tool and performance/stability/optimization docs",8147130adeb67df036c1f99ab7896d3c9fd93fdc
+MixedRealityToolkit-Unity,"Init work to notifiy user of performance optimization
+",e4bbd56ad3320b3087e14224c86afe0523a9d24b
+MixedRealityToolkit-Unity,"Merge pull request #5274 from wiwei/linkxml
+
+Add a link.xml to Assets to prevent critical MRTK components from getting optimized away in IL2CPP builds",7f9af4a8d0f4e939f37c4e3249ab28a82bf3c2e9
+MixedRealityToolkit-Unity,"Add a link.xml to Assets to prevent critical MRTK components from getting optimized away in IL2CPP builds
+
+https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4265
+
+See this comment in that issue for some more details on what happened here:
+https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4265#issuecomment-510246866
+
+Also, in case you were wondering how this was generated, these are the assemblies that are referenced in the default MRTK profiles (i.e. look for things of type ""SystemType"" and look at their corresponding references). In the long run this has to be more automated, as this was obviously a highly manual process. See this issue (https://github.com/microsoft/MixedRealityToolkit-Unity/issues/5273) for more details on that.
+",7c6ee07eae453923e315bbf124bef405980d7396
+MixedRealityToolkit-Unity,"Updates to optimize tool
+",648ff328accdc17949df67fec9e8997550c03154
+MixedRealityToolkit-Unity,"Merge pull request #5156 from Railboy/mrtk_gc_alloc_fixes_pt2
+
+Performance optimization with emphasis on HandInteractionExamples",e826f4e3be166dd96fa499263266d49167406ef1
+MixedRealityToolkit-Unity,"Updates to the performance doc
+",26b8916a91c3895d05dfba264634d85eb2b3c7b9
+MixedRealityToolkit-Unity,"Update the build pipeline to first build standalone, in order to avoid infinitely hanging play mode tests.
+
+It turns out that if there's a build error, running play mode tests will hang indefinitely in batch mode (this is because it shows a dialog saying ""hey, make sure your stuff builds""). Previously this wasn't an issue because the test step happened after everything else, but now that we moved the test step up to be the first thing, this is now problematic.
+
+Building standalone is the fastest of all of the flavors (because it doesn't have to build an AppX), so we're moving this to the top.
+",1e09d8d2ab42813de2dc28f243fdd4f40c7468ae
+MixedRealityToolkit-Unity,"Merge pull request #5123 from thalbern/user/bethalha/btn_interpolate_pos
+
+fixed fast moving hands passing the start press planes on low frame rate",dcbcc23c40ec2cf38beed6ebf8510d92940001ef
+MixedRealityToolkit-Unity,"fixed fast moving hands passing the start press planes on low frame rate when back press protection is enabled
+",60c8827c8770d493866ac073246898abb486e953
+MixedRealityToolkit-Unity,"Moving optimize utils to editor build only folder
+",0e9abbb2e9c89f281b1d87b29c90f4413dd2cc56
+MixedRealityToolkit-Unity,"Fix the broken .NET-C# projects build.
+
+This is an oldie but goldie. There's an issue that arises only when building on the .NET backend with C# projects enabled (this is a deprecated scenario but still one that is really useful for fast iteration).
+
+The problem is that even if an assembly is marked as a ""test assembly"" (as the play mode tests are), they will still be included in player builds for .NET-C# project builds. This is what the old comment was alluding to (but wasn't very specific about)
+
+We also explored doing things like marking the play mode tests as editor only (i.e. matching what the edit mode test asmdef looks like) but this had the side effect of removing all tests from the test runner (bad, tests are gone). Also tried making things editor + Win32 (standalone) + Win64 (standalone) only as well, though this still had the same problem even when building UWP .NET
+
+I updated the comment to be a little clearer about what's going on here and also updated the test guidance as well.
+
+Lastly, got rid of some unused using statements while I was in there.
+",cd941dd7f1eeb6e0fb5cf26c932142b06f2aeecd
+MixedRealityToolkit-Unity,"Updating doc link button for optimize window
+",154a6e2890931da10e17c50c697fd6f480bc72d2
+MixedRealityToolkit-Unity,"Merge pull request #4937 from ossala/feature/buildWindowPerfFix
+
+Build window performance fix",adba0c596733c3c0e66bf7fcd775de91ec7c6b12
+MixedRealityToolkit-Unity,"Minor update to ET target selection scene: Gems were rotating too slowly.
+",97fd38b6f54be252d235e955e6fb6ed5a30b9122
+MixedRealityToolkit-Unity,"Make the test run faster by reducing number of steps to complete hand movement
+",a0c9a94d92b2c3f6ffe7ebae4359ee6d67be7180
+MixedRealityToolkit-Unity,"Merge pull request #4669 from wiwei/revert4634
+
+Slate prefab box collider performance issue",edd6add8c008ee927e9ed698f49aa5a30c11bec4
+MixedRealityToolkit-Unity,"Slate prefab box collider performance issue
+
+https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4167
+
+Slates use the bounding box's rotate colliders in order to handle rotation - note that even though the slate provides its own box-like prefab, the bounding box still creates a sphere collider (which has wayyyyy more vertices than the simple box), even though a basic box would suffice. This change addresses the issue by adding an option to either use a box or sphere collider when a custom prefab is provided for bounding box rotate handles.
+
+This is done in this way to avoid being a breaking behavior change - other folks can choose to use a more performant collider, and the slate is the only thing updated to use this behavior for now.
+
+For the prefab, all I did was update the dropdown select button to choose ""box""
+",72b4442e1235eacc2f2535c4afe636a7cd5b414a
+MixedRealityToolkit-Unity,"Merge pull request #4634 from microsoft/revert-4461-issue4167
+
+Revert ""Slate prefab box collider performance issue""",aa95c16db0fe2be76ee547551b35ed6e7aec1b6c
+MixedRealityToolkit-Unity,"Revert ""Slate prefab box collider performance issue""
+",fd1ed059b78164543f72ed6db4c626aad9381617
+MixedRealityToolkit-Unity,"Merge pull request #4461 from wiwei/issue4167
+
+Slate prefab box collider performance issue",d30d5e7d1f06badcabd66394f013893975072f2b
+MixedRealityToolkit-Unity,"Merge pull request #4442 from wiwei/issue4351
+
+Add a default set of profiles that are optimized for getting started with HoloLens2",8c403e6b62d5645ecf35fe37901e339672b105b2
+MixedRealityToolkit-Unity,"Merge pull request #4474 from fast-slow-still/user/mafinc/dev_spatMap
+
+Fix spatial mapping to work with teleport and camera control.",e33f8721d28bd010ffb018e1482abb3db8041e58
+MixedRealityToolkit-Unity,"Slate prefab box collider performance issue
+
+https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4167
+
+Slates use the bounding box's rotate colliders in order to handle rotation - note that even though the slate provides its own box-like prefab, the bounding box still creates a sphere collider (which has wayyyyy more vertices than the simple box), even though a basic box would suffice. This change addresses the issue by adding an option to either use a box or sphere collider when a custom prefab is provided for bounding box rotate handles.
+
+This is done in this way to avoid being a breaking behavior change - other folks can choose to use a more performant collider, and the slate is the only thing updated to use this behavior for now.
+",952dac068e4980c8072edea898107e03b22e69b5
+MixedRealityToolkit-Unity,"Add a default set of profiles that are optimized for getting started with HoloLens2
+
+The default MRTK profile is good at showing off a lot of the features in VR and AR, but has some extra settings that either aren't necessary in AR (teleportation, boundary) or aren't performant (hand mesh visualization). Furthermore, there are also some settings that must be enabled specially in order to use HL2 features (such as Eye Tracking), which should really be set by default.
+
+This copies a subset of the configuration profiles with deltas as follows:
+
+1. Boundary system is disabled.
+2. Teleport system is disabled.
+3. Spatial awareness system is disabled.
+4. Eye tracking provider is added (https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#create-an-eye-gaze-data-provider)
+5. Eye simulation is eanbled by default (for input simulation).
+6. Hand mesh visualization is disabled.
+7. Camera profile settings are set to match, so that visual quality in the editor and device will look similar.
+",3f2813f7576e16e82096056befd15517ac637cdb
+MixedRealityToolkit-Unity,"Move the disposal of the dictation and speech providers off the main Unity thread.
+
+https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4261
+
+Starting and stopping play mode can be excruciatingly slow because of the time spent waiting for the dictation and speech providers to shut down. These are ultimately due to slowdowns in the Unity wrapped APIs themselves (and ultimately the UWP APIs)
+",b0135c1eca1b735e2d3920a8847658c4b19037c8
+MixedRealityToolkit-Unity,"Merge pull request #4343 from Troy-Ferrell/users/trferrel/mrtk-optimize-window
+
+MRTK Optimize Window tool to automate perf settings",6f88ee77484c4fc20207c63086e4c32f488da963
+MixedRealityToolkit-Unity,"Merge remote-tracking branch 'upstream/mrtk_development' into users/trferrel/mrtk-optimize-window
+",524ef08d8648c2b382a271a707d0478c3973d58a
+MixedRealityToolkit-Unity,"Final updates to optimize window
+",12c3a958fec01961d724539e85e00eb0c9a4fdd3
+MixedRealityToolkit-Unity,"Merge branch 'mrtk_development' into users/trferrel/mrtk-optimize-window
+",4b3571e026bb900010d8ca21dfb090163afe655e
+MixedRealityToolkit-Unity,"Working on editor performance
+",acd95ef20d277ab82514a2f4d46c68b85031f503
+MixedRealityToolkit-Unity,"Updates to optimize window
+",407741db1a2476bb6b84c702d1c146a829fd26bd
+MixedRealityToolkit-Unity,"Merge pull request #4049 from Cameron-Micka/optimizeInteractableThemeShaderUtils
+
+Interactable Optimization",11c854e9c41a07c63d39d40f4432daee96f8d61e
+MixedRealityToolkit-Unity,"Update GettingStartedWithTheMRTK.md
+
+- Update title to optimize for 'getting started mrtk'
+- Remove some > notes",746a8344873539ed849e14b5deb77ac7796f6c2c
+MixedRealityToolkit-Unity,"Merge pull request #1 from Microsoft/mrtk_development
+
+Mrtk development - fast forward",1c7772e0ce020cbf540c0cd2af1f5b653513eb46
+MixedRealityToolkit-Unity,"Update some of the MRTK-specific .NET scripting backend callouts.
+
+A couple of things here:
+
+BuildDeployWindow.cs - The user already gets .NET backend deprecation warnings in the regular Unity build window. The language of this warning is a bit strong telling people to switch to IL2CPP that may have good reason to stick to .NET (i.e. they actually want a debuggable experience and a faster inner loop). This changes the message to be closer to what Unity says - i.e. it's deprecated, try to use the new thing, but you don't have to. Originally I was going to remove this but then opted to keep it around in case people are only using this build window (in which case they still have some notification that this isn't going to be supported going forward.)
+
+MixedRealityEditorSettings.cs - This was actually a fairly problematic suggestion, because really going to IL2CPP is not actually required in Unity 2018.3.x (whose LTS version we are going to support.) What's worse is pressing ""ignore"" actually set a UNITY APPLICATION WIDE setting which would disable this prompt in other projects as well, and would also stop you from seeing suggestions to enable XR settings (i.e. if you switched from Standalone -> UWP, you would never see suggestion to enable XR settings). People who are enabling the .NET backend are doing so explicitly (and likely because they want a more debuggable experience) and we shouldn't force them away from that.
+",c86f540a3c785f33d0070e56b5a041f503a0db55
+MixedRealityToolkit-Unity,"Merge pull request #3812 from wiwei/performancedocs
+
+Add a documentation section on performance",b994ad2104ab2cba373fe045db07eacb3a5d1743
+MixedRealityToolkit-Unity,Merge branch 'mrtk_development' into performancedocs,e19a09521ecfafe0348907c4bfd9d6a59cb3fd69
+MixedRealityToolkit-Unity,Update Documentation/Performance/PerfGettingStarted.md,d2cba2234bc32250e2b9ea1c99dc4b365c9574d0
+MixedRealityToolkit-Unity,"Update Documentation/Performance/PerfGettingStarted.md
+
+Co-Authored-By: wiwei <wiwei@microsoft.com>",8e6ad5e160588c5f0615e44d51ca4ff9073003e5
+MixedRealityToolkit-Unity,"Update Documentation/Performance/PerfGettingStarted.md
+
+Co-Authored-By: wiwei <wiwei@microsoft.com>",9915a5bdb9225f028e7dc446ac90ce341e2fb142
+MixedRealityToolkit-Unity,"Add some basic performance docs
+
+Primarily this serves as an aggregator of existing documentation and
+general strategies for how to deal with performance issues.
+",e89eb28c3cb2588a38ad97652d4dbe4be1ac0876
+MixedRealityToolkit-Unity,"Use UTC times everywhere
+
+Replace uses of `DateTime.Now` with `DateTime.UtcNow` for performance
+reason, as the timezone information is not necessary.
+",425c65283700c7825b742e70c778899fb5e6e103
+MixedRealityToolkit-Unity,"Update the Coding Style to prefer DateTime.UtcNow over DateTime.UtcNow
+
+See cool stuff that Jerome found:
+
+https://microsoft.visualstudio.com/OS/_workitems/edit/20658760
+
+I wanted to get this written down in the coding guidelines (which probably can also be sharded out further into style vs. performance sections, instead of one large file)
+
+Long term we really should have some sort of linter that catches issues like this (warnings on pull request, etc), so that we can more proactively catch this sort of issue prior to checkin.
+",fcde1f97e7e5248e00ba063e9395b9f9b0d849c2
+MixedRealityToolkit-Unity,"Optimized shader keyword access with id instead of string lookup.
+Removed unneeded warning when loading texture at runtime.
+Misc formatting
+",1560f94620cd4867778f76e2cd0ab13252345af2
+MixedRealityToolkit-Unity,"Small Performance Tweaks Round 2 (#3503)
+
+* ToolTips only refresh content when changed
+
+* Update VectorRollingStatistics.cs
+
+* Improved ButtonBorder, removed allocations from Interactable Easing
+
+* Update Easing.cs
+
+* Updated Interactable themes to cache components, added Reset to InteractableThemePropertyValue
+",5c26eb5404bd6741e4595cc12e35470724459411
+MixedRealityToolkit-Unity,"Small Performance Tweaks Round 1 (#3479)
+
+* Disabled auto-sync transforms
+
+https://docs.unity3d.com/ScriptReference/Physics-autoSyncTransforms.html
+
+* Improved physical parabola speed
+
+* Improved bounding box performances
+
+Cached collider bounds (biggest cost)
+Stored transforms instead of game objects for visual objects
+
+* Set line step count for default pointers to reasonable settings, added perf warning tooltip to line pointer
+
+* Removed allocation in GazeHandHelper
+
+* Performance improvements to line data provider, line renderer, distorter
+
+Tiny gains but they add up when getting a lot of points.
+
+* Added warning to line pointer inspector
+
+* Small perf imrpovements in line renderer
+
+* Swapped out Unity Vector3 math for custom math
+
+Gains are minor but they add up when you've got a lot of ray steps.
+
+* Set transform mode to matrix in controller prefabs, updated range / max recommended for line steps
+
+* Reverting cached collider bounds change
+",aea84fb1a09f2a82f384fedfaf0e2e0aa6de4998
+MixedRealityToolkit-Unity,"- A GPU accelerated channel packer editor for easy channel map generation (#3382)
+
+- Spherical harmonics support for better lighting
+- Vertex color support (can now be used with the Unity LineRenderer)
+- Improved lightmapping support with a meta pass
+- HDR emission support
+- Minor bug fixes",ed3f6048cc6091726ae07ef963b56d0663b2e6a3
+MixedRealityToolkit-Unity,"optimize type checck
+",f53917f15bd5de90182b822e0b3c63649fab5821
+MixedRealityToolkit-Unity,"Merge pull request #3030 from StephenHodgson/vNEXT-PlayModeSpeedup
+
+Helped speed up play mode transition.",6d0d1b1945a2dc0981684e2b860636a65c7df019
+MixedRealityToolkit-Unity,"Helped speed up play mode transition.
+We were saving the assets before entering play mode which added a few extra cycles
+",46891e3d5b086d83b5f657bae97b39a838c27d25
+MixedRealityToolkit-Unity,"optimized reflection
+",840bb208a9eface5afd6d2e86d79897abbf245eb
+MoonMotion,"v.10.5.0
+
+• added Build scripts DefineMoonMotionToolkit and DefineSteamVirtuality
+• defined ""MOON_MOTION_TOOLKIT"" and ""STEAM_VIRTUALITY""
+• in #auto, implemented necessary conditions using these defines
+• updated Build explicit utility as needed
+• created CharacterExtensions
+• updated StringExtensions with splitting and joining extension methods
+• removed unnecessary using in TransformExtensions
+• implemented necessary compilation conditions in Kinematizer and Slower
+• fixed return type of multiple extension methods in IEnumerableExtensions
+",72a52ea3ee262c1e9e69798321a56b289b7b1d9b
+MoonMotion,"v.3.0.0
+
+• added many utility scripts, especially extension methods, and began using them
+• added and implemented Naughty Attributes
+• added and began using Automatic Behaviours and Singleton Behaviours
+• made terrain frame unlit to improve performance
+• optimized lighting in toolkit scenes
+• organized utilities
+• updated Git Ignore for plugins not distributed with the toolkit
+• rave powerup now always turns light off instead of toggling
+",a85ab3ab6a09d4146c16240381dd9d3e2d798634
+MoonMotion,"v.1.0.6
+
+• archived the Booster Jet Smoke and Sparks particles into a prefab, to save performance by default
+",ba01c96d36bc7db3ea865fba69fe0816d8c50508
+readyPlayer2,"Updated the materials to use the Fast Configurable Shader
+",b5c5b62e0904541a7bb1a3ed4e12a3ba1a0cdbff
+readyPlayer2,"Removed WatchForThemeChange variable and checks so that widgets always check for theme updates by default. The performance hit seems minimal and the functionality is valuable enough to promote it to the default behavior.
+",620472fe6310ff6dbf8630ee5be07164c8c19a99
+readyPlayer2,"Merge pull request #810 from StephenHodgson/HTK-ShaderUpdate
+
+Fast Configurable Shader Replacement",c956db067e1dccac0c77360e256a3701b2e4beb7
+readyPlayer2,"removed button_unlit_shader was replaced by Fast Configuable.
+",eecdd665662d1d7e5873a5f4fb3aa8294ae507ed
+readyPlayer2,"Updated all references to obsolete or standard shader to Fast Configurable.
+",647b564db343cf1f8992fb6c7ef61e4a99ff838e
+readyPlayer2,"moved standard fast shader to obsolete folder
+",20b9090912219a719f8236bfa7f7a724dad2b297
+readyPlayer2,"Deleted FastConfigurableTest.meta
+
+Unused meta file from renamed scene",c38c6ca9e277637b36dfb2b053042b8c1ad1b6ff
+readyPlayer2,"Merge pull request #619 from dbastienMS/master
+
+major update to fastconfigurable shader - custom editor, perf improvements, reflections, rim lighting, alpha cutout, lightmapping support, etc.",e08d97c2f9233191b1dc793466989e16695a0f1d
+readyPlayer2,"major update to fastconfigurable shader
+",0c1388d96cfee18ee22f592a6d111f0ad8151e59
+readyPlayer2,"Merge pull request #554 from thebanjomatic/objecttoclippos
+
+Using UnityObjectToClipPos according to performance recommendations",7130ab0403dba3e277a527f60efb59618fbe1441
+readyPlayer2,"switching to use UnityObjectToClipPos according to performance recommendations
+",3c023a513c1c859462b379b3b044f8e48c0dc027
+readyPlayer2,"Merge pull request #566 from mironec/master
+
+Greatly speed up RemoveSurfaceVertices",672ae9786d5dfbd3dff0e6e608d5a6190e781a22
+readyPlayer2,"Use HashSet instead of List for vertsToRemove
+
+Allows for a great speed up in vertsToRemove.contains(...).
+",00159b7ccf6329b4240e85be8afa09584d159193
+readyPlayer2,"Updated project settings and fixed mismatch GUID on Fast Configurable Shader meta file.
+",a743ec216682bfb59179fe256b70d06eaedc758f
+readyPlayer2,"Merge pull request #454 from dbastienMS/master
+
+Adding fast configurable shader",c56554b7aa10670b9a3b1fc03c53bcc9f31af47c
+readyPlayer2,"Adding fast configurable shader that should be able to replace almost all uses of existing shaders.
+",7b71290ebb29c90d90f438f3a4354da8c3c1e941
+readyPlayer2,"Merge pull request #339 from cre8ivepark/master
+
+Text prefab with optimized dimension and rendering quality",cd2fd2f9569552c37ab9defba108e7b7d9999b12
+readyPlayer2,"[~]Performance updates. Cached raycastResultList in GazeManager.cs;  removed allocations for each input execution in InputManager.cs; Cached animator parameters in TestButton.cs
+",59463fac90767414e8d9de6349a78e662a6fbf24
+readyPlayer2,"Various fixes to ManualCameraControl :
+- no need to check for GetKeyDir up/down AND GetAxis horizontal/vertical
+- moved new walk code where it's supposed to be
+- exposed fast control key (instead of always using left shit)
+- also removed an annoying debug statement
+",4649cf5652dcff97f8ec1e32fe4605e74d577fff
+readyPlayer2,"Various fixes to ManualCameraControl :
+- no need to check for GetKeyDir up/down AND GetAxis horizontal/vertical
+- moved new walk code where it's supposed to be
+- exposed fast control key (instead of always using left shit)
+- also commented an annoying debug statement
+",43fc31359978fd35edbec053653fb764e603bb16
+readyPlayer2,"Merge pull request #87 from jevertt/Build-Automation-Window
+
+Build automation window for faster test iteration with device",bef9230b939b2dc257aee23e3094dfb953a5a515
+readyPlayer2,"Build automation window for faster test iteration with device
+
+This is a first time checkin of a Build & Deploy window. It supports
+one-button clicks for building the SLN file, building the APPX,
+uninstalling & installing on device, grabbing the log file (among other
+things). Also has a single click build SLN, APPX, and install option.
+",98daf02edf891291adbe33746900513df7ee5c6a
+readyPlayer2,"More performance improvements.
+
+Changed int check to bool.
+Grabbed prior text fixes.
+",06e779587416ba64848aa3876720630f66665b1b
+readyPlayer2,"GazeStabilizer Performance
+
+Switching from List to LinkedList to address the BlockCopy concerns involved with RemoveAt.
+",fa3285bd9dddbb02eaae8af9e5953d731997ea03
+readyPlayer2,"GazeStabilizer Optimization
+
+A queue's ElementAt method iterates internally until it reaches element i. Calling this multiple times within a for loop is very slow.  This commit changes the Queue to a List so that it can iterate more quickly.
+",323609fb31c0af0603df92df78be6f43da8a64da
+readyPlayer2,"update StandardFast shader to be based on the 5.4 sources.
+",9e67b1f6a6c73bc71880976c225ac7ba1c5b81fb
+Snowfield-VR,Optimized Portals,aef438c71a53856b5133a3d84f2e94c76d3084a9
+Snowfield-VR,"Added alot of stuff
+
+Optimized stats container, finished dropping items, added ai equip logic, alot of bug fixes",bb0ccf312f25dcf0d1cbe0848f28fd9de4825b14
+Snowfield-VR,"Optimized mail event area
+
+",32b2d295c44ae5d59529538a39f83b49776de975
+Snowfield-VR,Merge branch 'feature/Optimize_Textures' into develop,4e36d083b380537d28cc5f31cb2f6397f8aa3cb1
+Snowfield-VR,Merge branch 'feature/Optimize_Textures' into develop,3c14081a2a39b05d8808368586ed5f01e4390752
+Snowfield-VR,Optimized Outline Shader,3a8d0ba3245ce82f58af34266321525a4ea97ca8
+Snowfield-VR,Optimized even more fucks out of the scene,799dfa27410d97d14a0482446b3365822f1b6a45
+Snowfield-VR,Optimized the fuck out of the scene,e984aa85e804ceafc2b41bd781edd541a00e42d4
+Snowfield-VR,"Merge branch 'feature/Optimize_Request_Structure' into develop
+
+",639be34062d5466171731c4ff3cb89372777877a
+Snowfield-VR,"
+
+Optimized baking and lighting",a8abe6c11ff00694f984f93caa1d82217baa2ec0
+SoftwareCity,"feat(rendering): fix performance problem
+",0e10a7e0e9ae3279bf7340c3fcb662a6cce68925
+SoftwareCity,"feat(rendering): solved a little bit the performance problem
+",5fb9496d11ac0e529684fb0c6b7820f9a1aa487f
+SoftwareCity,"feat(rendering): add performance features
+",b3d43ea501342ae588b807da87b467d7872aaab2
+SoftwareCity,"feat(rendering): add material to push the performance a little bit
+",759ed41a1cff741ab4bab8f63d403dc926eea266
+UnityClient,"Gaze data iteration
+
+-Added custom created layer for gaze data information retrieval .
+-Works sufficiently however the current solution in the script is unoptimized and hard to read. Needs to be cleaned.
+",16ff54efc319b6f0677c61302fcc3ead223ab7aa
 virtual-museum-app,"Merge pull request #87 in DPVM/app from master to feature/BuildMuseum
 
 * commit '330f6828874c370739c7651350f7c2c17b95a5e0':
@@ -35,3 +1227,2248 @@ virtual-museum-app,"Merge pull request #38 in DPVM/app from feature/BuildMuseum 
 ",7d42a82ace56af146ff3822571321382688ff52b
 virtual-museum-app,"Made drawing tiles fast again
 ",b3823da35794be9eb19b3ad2a23ce86ea3b246f8
+Virtual-Reality-Nanodegree,"Unity 2017.2.0: Switch platform to Android,
+build and run on Nexus 5,
+running smooth and decent with audio.
+Runs much faster and better on Oculus and
+Samsung S7. Swtich platform to PC/Mac after test
+in VR-Software-Development-Starter-Project-George-Zoto.
+",01bf1bef5e452d4ef830e867c4122da678ecdb69
+Virtual-Reality-Nanodegree,"Unity 2017.2.0: Add Astra Shuttle slow animation,
+Issue with visual effect and sound
+not following parent object, spaceship in this case,
+during an animation or during game play
+in VR-Software-Development-Starter-Project-George-Zoto.
+",2eac7e1feb68af2047da19c5f9a89b42b830c60d
+Virtual-Reality-Nanodegree,"Unity 2017.2.0: Switch platform to Android,
+build and run on Nexus 5,
+running smooth and fast with audio
+in VR-Software-Development-Starter-Project-George-Zoto.
+",f9936de83148580aade6417d61e0f7b74c7867bd
+Virtual-Reality-Nanodegree,"Unity 2017.2.0: Switch platform to Android,
+build and run on Nexus 5,
+running smooth and fast with audio
+in VR-Software-Development-Starter-Project-George-Zoto.
+",ffbcecca1cede98ee89d6aeaec6d63b0cc1dc0e3
+Virtual-Reality-Nanodegree,"Unity 2017.2.0: Add Unlit-Superfast and Mobile-Difuse-Fast shaders to primitive object scene.
+",11f49dd068dd01e06837045111f9c0572fa628d8
+vr-annotate,"Removed unused script for performance tests
+",7f8c6e52fa69b0510f4cd582734892d49ee603e8
+vr-annotate,"Set up performance tests
+",31115ad9582bfab69fe67fef7761c3554e87609c
+vr-annotate,"Optimized keyboard performance
+",81a8e53310e9166f725c102e1065b5db212dcdac
+vr-annotate,"Added bigger scene for performance tests
+",8f626d40e89351c31bc0b74e954fcee59c17bd0b
+vr-pacman,"Refactor and performance updates
+",7600b1e22fe65534c24e170a7441b915921bf8b5
+VRAlchemyLab,"Liquid Pour VFX : Adding sound and impact system
+
+Added an impact system to trigger the sound and set the volume intensity.
+1 - The script is spawning sphere colliders (with a limited count) that fall at the same speed as the VFX particles
+2 - When colliding the sphere is increasing the volume of the liquid sound
+
+Could probably be optimized with proper pool and queue technique.
+Here create a limited count of colliders (10 per bottle) and reuse them all the time.
+",3af6acdc20a75e5cebfd26ab2cbfe4dcf7eef9e4
+vrDemo,"optimize
+",afe09d1524c0716a290c9c795f37e1d44d5922f9
+vrDemo,"optimize
+",c17767565381d68a8df9e758bc436d08dc6c4237
+vrDemo,"fix stone tower bevel and optimize scene
+",28de75ace741594bfdb301c488a27506da4e2069
+vrDemo,"optimize for mobile
+",87a97d0e723b3f149cf90afd44ca412c807633fa
+VRLabyrinth,"decrease size for performance
+
+",0b8b02b2d4e39823d54fe35e8dccb1ea6b8e5ffd
+VRLabyrinth,"Little bit faster touchpad movement
+
+",ce4ad70c5854c16e02d6602e21be81bffde95764
+VRsus-guARdian,"Change health UI
+
+added lifes, invisibility and slow. Don't what to do for invisibility
+and slow. but the assets are in there.
+For the health bar, I added 3 health icons they change with the
+player.health
+",54e21020a1ae3695d76f8fd0b23519855f4a70d9
+VRsus-guARdian,"Optimized particles
+",b3e3376c0303ab2d5d46a85b0bdef3726e9e18e9
+VRsus-guARdian,"Updated relic material, added particle effects for slow and rock debris
+",680bc89bcda074c942b038a41d258dc3b4131743
+VRsus-guARdian,"Finished slow/swamp trap
+",15037116f4289f6ec50d590c488e1e371bafcb36
+VRsus-guARdian,"Added Trap Wall in replacement of the slow trap
+",9d32bf9463051f1c0186de782874e21e95e170a2
+VRsus-guARdian,"Fix slow trap trigger and trap toggling
+",7427d01b16364933ac4567680cb77be44ca591f7
+VRsus-guARdian,"Fixed toggle for slow trap
+",da68b77fedb51f3a2fda8faf7186bd2c308e8941
+VRsus-guARdian,"Fixed issue with slow trap and toggling
+",9d5ac4bcad5bd8a71648362758faa810a164a85d
+VRsus-guARdian,"Fix trap slow aoe
+",b491b2080107ebc6c79d1f2dfba5052ca8c27099
+VRsus-guARdian,"Fixed movement jumping to rocket hover and added slow trap
+",3893971559120b73ed79e472cf0bb92f836b5a2a
+VRsus-guARdian,"Finished slow trap and test/starting area
+",d851e256bbdf3e6a307b7d156ef456fe1a0f7722
+VRsus-guARdian,"Fixed ARKit code to work with networking infastructure
+",fb90533e90f76d131bcdcb8c04203b97441cccfb
+VRTK,"fix(Interactions): only draw gizmos when drive is selected
+
+The Directional and Rotational Drive Facades have been updated so
+the gizmos for the axis data are only drawn when the drive GameObject
+is selected in the hierarchy as this increases editor performance and
+it is not necessary to draw gizmos all the time.
+",a961cd91dc87d39c56753e43d2455aae8a6cc07e
+VRTK,"chore(Dependencies): update Zinnia submodule to latest head
+
+Fixes the performance issues with grabbing.
+",89cca8b79e1f647da3c6e5aeedbb536db90123ea
+VRTK,"fix(Interactions): set rigidbody maxAngularVelocity to infinity
+
+Unity sets a rigidbody maximum angular velocity to 7 mps by default
+which is acceptable for most uses, however with tracking rigidbodies
+to follow the angular changes of a posed controller then this max
+velocity is not enough.
+
+This manifests into an issue with using rigidbody tracking on the
+object follow as the target object slowly rotating to keep up with
+the source object.
+
+The fix is to set the Rigidbody.maxAngularVelocity parameter to
+infinity. This cannot be done on the Rigidbody inspector component
+as Unity do not expose this parameter for some reason. Instead of
+adding a new component, the BehaviourEnabledObserver has been added
+to the Interactables that listens for when the InteractableFacade
+is enabled and then sets the maxAngularVelocity on all of the relevant
+rigidbodies.
+",58c393dd1671eaeb488bd6a04d82db6df44344a1
+VRTK,"chore(Dependencies): update Zinnia submodule to latest head
+
+The latest changes to Zinnia brings performance improvements.",165db373978a97297832dd42c33ee3dacfe9eeb7
+VRTK,"docs(README.md): add guidance of how to run example scene
+
+The README doc has been updated with a guide of how to run the farmyard
+example scene along with informing users to run the scene in `Maximize
+On Play` mode to reduce the performance issues observed running in the
+Unity Editor.
+
+A few style changes have been made as well to improve markdown
+consistency.
+",7451eeb820d1921c60d882879ed4ee7a6dc6e998
+VRTK,"chore(Dependencies): update Zinnia submodule to latest head
+
+The latest changes to Zinnia bring performance improvements.
+",bff91deee6af5cd99018be7f696e1ca8bf598376
+VRTK,"perf(Interactions): make fields read-only where possible
+
+The compiler can optimize usages of read-only fields in comparison
+to mutable ones. This change ensures the `readonly` keyword is
+applied to all fields that can be read-only.
+",76788a47f4047d64eb47330547cbb77b376a63c6
+VRTK,"perf(general): reduce heap allocations by removing LINQ usages
+
+Heap allocations are garbage-collected which is an issue for
+real-time applications. To ensure the best performance is available
+to a user of VRTK this change removes most usages of LINQ. `foreach`
+loops are left in as there are no garbage allocations in recent
+versions of Unity thanks to the upgraded compiler it's targeting
+nowadays.
+",98cffa6acb67edea4ebe4589d71a4a246473c168
+VRTK,"feat(structure): allow using Malimbe
+
+Malimbe helps to write reusable API components for usage in Unity
+faster. This change enables the VRTK project to use Malimbe in both
+the prefab components as well as in the sample scene's scripts.
+",d1222e1cf2e5e4ff1ddb65990b33a69b1c75dcc5
+VRTK,"refactor(Structure): provide helper methods for lists and dictionaries
+
+There are a number of places where the use of a List or Dictionary has
+unnecessary repetition in checking if a value or key is present before
+either adding or removing from the list or dictionary.
+
+There are also times where a value is attempted to be retrieved from
+a dictionary but it doesn't exist which would then need to be added
+so multiple dictionary lookups are done, which is inefficient. The
+proposed changes ensure a single look up is done via `TryGetValue`
+which will reduce dictionary usage overhead.
+
+Some places that used lists and cared about not having duplicates but
+didn't care about list order have been updated to use a `HashSet`
+which by default doesn't allow duplicates so there is no need for
+an unnecessary `Contains` check. Some scripts iterated through
+the `List` with a `for` loop which is not possible with a `HashSet`
+so they have been replaced with a `foreach` loop as this shouldn't
+cause any efficiency issues in Unity 5.6 and above.
+",c40d0d8f8e91226430615e10765e55763d12d8e3
+VRTK,"feat(SDK): add hand axis guides to simulator
+
+The Simulator hands now have an axis guide to show the axis in which
+the hands will be moving.
+
+Also, added a parameter to set the speed of the mouse cursor when it
+is in locked mode as it was moving too slowly.
+
+All private methods have also been made protected now if the script
+requires extending.
+
+Only one example scene has been updated with the new Simulator
+CameraRig prefab as the rest of the example scenes have become detached
+from the prefab due to the name change.
+",c52dc182abc6832f9a7bc9a47a359e5e4dff5f72
+VRTK,"fix(Pointer): update pointer position in fixed update
+
+The Straight Pointer Renderer position was being updated using the
+Transform Follow script and this was defaulting to using the
+OnPreRender moment to update position. This had a knock on effect
+that the pointer Object Interactor position was being updated in a
+Fixed Update but this meant that the Object Interactor position was
+not correctly updated to the correct pointer position as the pointer
+position was always slightly slower due to being on the OnPreRender
+setting.
+
+The solution is to ensure the Pointer position is updated via
+FixedUpdate as well to ensure the position of the pointer is correct
+for when the Object Interactor is updated in the Fixed Update routine.
+",65f600e2513dedfb5a82d3f30e08c5032259940e
+VRTK,"fix(Structure): ensure script references are correctly set
+
+Previously, many of the script references required scripts to be placed
+on the same GameObject as the existing script. Things like controller
+related scripts should be able to be placed on child GameObjects on
+the script alias objects.
+
+Any generic play area script should not have to be on the same
+GameObject as any other script so doing a `FindObjectOfType` is a
+better way of finding the script. Even though this is slower it is
+only done in `OnEnable` so shouldn't be that slow.
+
+If it is slow then the ObjectCache can be used in the future.
+",07e6cc5de32acc032bc1e8ba6affb825d912f7d6
+VRTK,"chore(Avatar): update avatar hand models
+
+The Avatar hand models have been updated with a lower poly count
+version to make the performance better. The armature and animation
+structure has also been improved.
+",c586fd493105571c9811bed7f8d919886c1f676d
+VRTK,"refactor(Structure): replace occurrences of Equals with ==
+
+Unity3d creates garbage when dealing with `Equals` as it's considered
+a Boxing method and therefore is less efficient than simply comparing
+with `==`
+
+This information can be found at: goo.gl/apMyGU
+
+This refactor replaces all of the occurrences of `Equals` with `==`
+to provide the efficiency improvements.
+
+The MoveInPlace script has also been slightly refactored to use a
+`switch` statement rather than a collection of `if/else` statements
+that all in turn used the `Equals` method as well.
+",bf90d21ff3726ad470eeb027d43b97d02af6d9fd
+VRTK,"Merge pull request #1406 from thestonefox/refactor/snap-drop-zone-efficiency
+
+refactor(SnapDropZone): reduce GetComponent calls in update",b2f5b081fcc49299ada665cde75efba8af332259
+VRTK,"fix(Locomotion): correct teleport to destination point with dash
+
+There was an issue with Dash Teleporting to a Destination Point
+where the Destination Point would attempt to reseat the final
+position to the Destination Point destination location but this
+was happening too fast before the Dash Teleport had chance to
+finish lerping to it's final destination.
+
+The solution is to create a new way of overriding the final destination
+of the teleport before the teleport event has triggered and then this
+override is called from the destination point when the destination
+marker events occur.
+
+This now allows the destination point to only need one teleport event
+as it tells the teleporter the actual destination rather than just
+using the destination the pointer gave it.
+
+The dash teleport also lerps the rotation of the teleport now as well
+rather than just snapping to the new rotation which was incorrect.
+",5f4e36007bfe2837969037776d976ada61c03990
+VRTK,"fix(ControllerReference): prevent getting reference in OnEnable
+
+Because SteamVR disables the controllers at start up, it means that if
+the ControllerReference is attempted to be retrieved in an OnEnable
+method, then the controller reference will be invalid therefore
+causing issues with the rest of the script. The better solution is
+to use a Getter that attempts to get the reference a fresh every
+time it is requested, as the lower level calls are all cached then
+this won't cause any slow down issues and will ensure the controller
+is available.
+",9a98d0997b2880a9a9590a5fcab7316490ec8635
+VRTK,"fix(DeviceFinder): headset type recognition
+
+The headset type recognition has a fixed list of known headsets.
+This list is missing a special Vive Pre model that is reported as
+""Vive DVT"".
+This fix adds that headset and modifies the recognition to also tell
+the user to report any new headset type so it can be added to VRTK.
+Additionally a slower check is done when a summarization is
+requested to support types VRTK doesn't know about yet.
+
+This fixes #1113.
+",90fb4979663ee3d1dc2dc6acabff79521fa23632
+VRTK,"feat(ControllerReference): add new way of referencing controllers
+
+Previously, controller calls were referenced in a number of ways from
+utilising the controller's id, to passing a game object of either the
+actual controller game object or the script alias game object.
+
+This meant that ways to call certain methods was fragmented and lead
+to confusing different options between methods.
+
+The new ControllerReference script is used to get a reference to
+a controller based on any number of things such as an index, the
+actual GameObject, the script alias Object, the model Object or
+even the controller hand.
+
+Once a reference is retrieved, it can then access all of the elements
+of a controller, such as:
+
+ * index
+ * actual
+ * scriptAlias
+ * model
+ * hand
+
+The ControllerReference script also has a collection of static methods
+that are preferably used rather than needing to instantiate a new
+object as the static methods do some nice checking to make sure
+the ControllerReference is valid.
+
+The Controller References are also cached for performance and
+different instances of a Controller Reference object can be compared
+as a custom comparator has been provided that compares on the index
+of the controller which would always be universally unique.
+
+A large collection of methods in the SDK implementations and SDK Bridge
+have been re-written to utilise the Controller Reference, whilst a
+collection of methods in the SDK Bridge have been deprecated and the
+relevant methods in the SDK implementations have been removed.
+
+All of the event payloads that passed a controller index around now
+pass a controller reference, with the index being deprecated.
+
+Added a basic test script to the Examples directory to test the
+functionality of the Controller Reference script to ensure it is
+all working as expected.
+",d564410ab1417aa8ef1e00390379e64e2240f249
+VRTK,"fix(Presence): ensure is moving isn't always toggled on in body phsyics
+
+The Body Physics script was continually toggling the isMoving parameter
+even when standing still due to the ray cast collection that checks to
+see if the user is walking over an uneven floor.
+
+This was because the system casts 2 rays down, 1 from the headset
+position and 1 just outside of the body collider and checks to see if
+the difference means an incline/decline has occured. The issue was
+that the headset rotation was affecting the forward direction of the
+second down cast.
+
+Another additional parameter has been added to allow the play area
+movement threshold to be determined to prevent the headset pushing
+the play area back if the headset is moved very slowly.
+
+The code has also been cleaned up to make it easier to read.
+",8add2f367ba03e2ac23fda9f2eebdc642a95bdbe
+VRTK,"fix(ControllerEvents): ensure axis events take place on small changes
+
+Previously, the touchpad axis would not update if the touchpad was
+touched slowly creating a small delta because the previous touchpad
+axis state was always being updated even if a change hadn't occured.
+
+The fix is to ensure that the previous touchpad axis state is only
+updated when the touchpad axis has actually changed. This allows for
+smaller movements to be registered still.
+
+The Touchpad Axis Change event is also only emitted now when the
+touchpad is being touched as it would previously emit when the touchpad
+was released causing an additonal axis event change that wasn't
+required. The Trigger and Grip axis change events also have their axis
+value forced to `0f` now if the axis is no longer being touched as
+sometimes the controller hardware could report an untouch of a button
+but the axis was still reporting a value over 0f which seems wrong.
+",64461f829035b128097588dc440427800cd42007
+VRTK,"feat(Locomotion): add falling deceleration to MoveInPlace
+
+The MoveInPlace script now has a separate deceleration setting for when
+the player is falling giving a more refined feel to falling off ledges
+and not abruptly slowing down.
+",f659edd3d0c8385ea01bf1d315e3acb54a11d4fd
+VRTK,"feat(Locomotion): add deceleration to MoveInPlace
+
+The MoveInPlace script now has a deceleration parameter that
+gradually slowed down when the engage button is released rather than
+just immediately stopping.
+",7a1df514a6f514e13c793bb92de7b338eb22d24a
+VRTK,"fix(Interaction): parent of the outline highlighter cloned object
+
+Change the parent of the OutlineObjectCopyHighlighter cloned object to
+the same parent as the original object.
+
+Change the parent setting to not re-compute world position.
+
+Change the transform assignments from world to local (faster), because
+now the parent is the same.
+
+The OutlineObjectCopyHighlighter cloned object needs to have the
+parent set to the same parent of the customOutlineModel to exactly
+match its shape. Even the PR #828 still causes problems with a hierarchy
+of game objects with different scaling (e.g customOutlineModel with its
+own scaling as child of the game object with its own scaling, holding
+the OutlineObjectCopyHighlighter component).
+",af45d441efe47fc534db5ee14297d07d24423b48
+VRTK,"feat(Locomotion): add speed multiplier button to touchpad walking
+
+The Touchpad Walking script now has an option to press an additional
+button to activate a speed multiplier which if is set to a number
+above 1f then it will speed up the movement, however if it is set
+below 1f then it will slow movement down.
+",a57af77675291ceee5f4eaf682c70e7deabbbdc3
+VRTK,"perf(ControllerEvents): don't create garbage on vector comparison
+
+Two `Vector2`s were compared by using a string based method which
+creates garbage on every call which decreases performance. The solution
+is to do it without using strings and only relying on stack allocated
+structs.
+Thanks to @reznovvr for this performance fix.
+",a491404cf6ba1e58fbd9c5a28e67a4907badcbf6
+VRTK,"feat(Interaction): allow interactable objects to be disabled
+
+As the Interactable Object script executes an Update and Fixed Update
+it can cause performance issues when many interactable objects are
+within a scene and active. The Update and Fixed Update only need to
+execute if the object is actively being interacted with so a new
+option of `Disable On Idle` has been added and if it is set to `true`
+then when the Interactable Object is not being interacted with then
+the Interactable Object script will be disabled meaning the Update
+and Fixed Update methods are not executed each frame.
+
+It may be required to ensure the Interactable Object is always running
+the Update and/or Fixed Update method so in these cases the `Disable On
+Idle` method should be set to false, as demonstrated in the example
+scene `006_Controller_UsingADoor`.
+",d2002e0eed66e5e12a5217d19bc61edb1cb4696d
+VRTK,"perf(AdaptiveQuality): increase render scale faster if possible
+
+This change doubles the increased amount of the render scale level if
+the framerate was good for many frames.
+",773e5f23c5dd5543b4f18676a838c3b5e4eb5293
+VRTK,"perf(AdaptiveQuality): increase render scale later
+
+Increasing the render scale after just 3 cheap frames is too soon.
+Checking the last 6 frames seems to reduce the scale levels getting
+changed too much, resulting in reduced performance.
+",aae9c903e0267c84aaf850f4e8fc026367b0e4be
+VRTK,"fix(Interaction): remove limiting max angular velocity on throw
+
+The Throw section of the Interact Grab script would limit the
+`maxAngularVelocity` of the rigidbody to the current `angularVelocity`
+of the thrown object, this is from the original SteamVR_TestThrow
+script and assuming it is there to lock the rotation of the object
+to the initial spin, but it would seem that an object should be
+able to continue to spin faster if required.
+
+Also, doing this breaks the `Track_Object` grab mechanic as it prevents
+it from being rotated at a normal speed once dropped.
+",7339f353d585a45cb5c7df3e73cd4a4fb9735838
+VRTK,"feat(Events): add unity events helper scripts for delegate events
+
+The toolkit uses C# delegates to raise events, however, Unity Events
+provide a nice inspector interface (but come at a performance cost) so
+Unity Event helper scripts have been added that can be used to extend
+the relevant script that is using a C# delegate to provide the benefit
+of Unity Events but optionally to remove the requirement of the
+performance overhead.
+",b5f9b10e219d617296af53f1403a06e8e51bb042
+VRTK,"feat(Controller): add ability to get controller velocity
+
+The Controller Events now has a method for getting the current velocity
+and angular velocity of the controller.
+
+The sword example has been updated to utilise this new velocity to
+determine how fast the sword is being swung to determine the collision
+force.
+",283155cfffc00a4431f248ed0c49d90038a1abd9
+VRTK,"feat(Interaction): add grab precognition for catching objects easier
+
+If an object is falling very fast then it is difficult to press the
+grab button on the controller at the right time due to human reflexes
+being an issue. The Grab Precognition parameter on the Interact Grab
+script allows for a small window of time from the point of the grab
+button being pressed to when the object has to collide with the
+controller. If the object collides within the given time frame then
+the grab action is successful. This makes it easier for catching items
+as they fall fast, or the ability to swipe and grab an item without
+being particualrly careful with the grab motion.
+",d792617ebf24b740bcfe8039d9a468bee7d4dcfd
+VRTK,"fix(CameraRig): add movement deadzone to prevent walking glitch
+
+The Touchpad Walking script had an issue where the speed variable
+would not completely reset after releasing the touchpad meaning the
+CameraRig would slide slowly across the floor as a value was still
+present. This fix adds a deadzone margin to zero the speed variable
+if it falls between this margin to prevent the sliding effect.
+",924eb63ca8696c7a799f07752615db0bf1d25bab
+VRTK,"feat(Movement): add ability to change play area Y on mesh colliders
+
+It is now possible to move up and down mesh colliders by walking in
+the play area and the mesh below will affect the Y of the play area.
+
+It has an adverse effect of not doing the blink on fast movements
+such as falling from a mesh because it's not an actual teleport but
+a walk within game space.
+",39e91b82314b98f79ac2ce56f918705004279487
+VRTK-GearVR-Test,"refactor(Structure): provide helper methods for lists and dictionaries
+
+There are a number of places where the use of a List or Dictionary has
+unnecessary repetition in checking if a value or key is present before
+either adding or removing from the list or dictionary.
+
+There are also times where a value is attempted to be retrieved from
+a dictionary but it doesn't exist which would then need to be added
+so multiple dictionary lookups are done, which is inefficient. The
+proposed changes ensure a single look up is done via `TryGetValue`
+which will reduce dictionary usage overhead.
+
+Some places that used lists and cared about not having duplicates but
+didn't care about list order have been updated to use a `HashSet`
+which by default doesn't allow duplicates so there is no need for
+an unnecessary `Contains` check. Some scripts iterated through
+the `List` with a `for` loop which is not possible with a `HashSet`
+so they have been replaced with a `foreach` loop as this shouldn't
+cause any efficiency issues in Unity 5.6 and above.
+",c40d0d8f8e91226430615e10765e55763d12d8e3
+VRTK-GearVR-Test,"feat(SDK): add hand axis guides to simulator
+
+The Simulator hands now have an axis guide to show the axis in which
+the hands will be moving.
+
+Also, added a parameter to set the speed of the mouse cursor when it
+is in locked mode as it was moving too slowly.
+
+All private methods have also been made protected now if the script
+requires extending.
+
+Only one example scene has been updated with the new Simulator
+CameraRig prefab as the rest of the example scenes have become detached
+from the prefab due to the name change.
+",c52dc182abc6832f9a7bc9a47a359e5e4dff5f72
+VRTK-GearVR-Test,"fix(Pointer): update pointer position in fixed update
+
+The Straight Pointer Renderer position was being updated using the
+Transform Follow script and this was defaulting to using the
+OnPreRender moment to update position. This had a knock on effect
+that the pointer Object Interactor position was being updated in a
+Fixed Update but this meant that the Object Interactor position was
+not correctly updated to the correct pointer position as the pointer
+position was always slightly slower due to being on the OnPreRender
+setting.
+
+The solution is to ensure the Pointer position is updated via
+FixedUpdate as well to ensure the position of the pointer is correct
+for when the Object Interactor is updated in the Fixed Update routine.
+",65f600e2513dedfb5a82d3f30e08c5032259940e
+VRTK-GearVR-Test,"fix(Structure): ensure script references are correctly set
+
+Previously, many of the script references required scripts to be placed
+on the same GameObject as the existing script. Things like controller
+related scripts should be able to be placed on child GameObjects on
+the script alias objects.
+
+Any generic play area script should not have to be on the same
+GameObject as any other script so doing a `FindObjectOfType` is a
+better way of finding the script. Even though this is slower it is
+only done in `OnEnable` so shouldn't be that slow.
+
+If it is slow then the ObjectCache can be used in the future.
+",07e6cc5de32acc032bc1e8ba6affb825d912f7d6
+VRTK-GearVR-Test,"chore(Avatar): update avatar hand models
+
+The Avatar hand models have been updated with a lower poly count
+version to make the performance better. The armature and animation
+structure has also been improved.
+",c586fd493105571c9811bed7f8d919886c1f676d
+VRTK-GearVR-Test,"refactor(Structure): replace occurrences of Equals with ==
+
+Unity3d creates garbage when dealing with `Equals` as it's considered
+a Boxing method and therefore is less efficient than simply comparing
+with `==`
+
+This information can be found at: goo.gl/apMyGU
+
+This refactor replaces all of the occurrences of `Equals` with `==`
+to provide the efficiency improvements.
+
+The MoveInPlace script has also been slightly refactored to use a
+`switch` statement rather than a collection of `if/else` statements
+that all in turn used the `Equals` method as well.
+",bf90d21ff3726ad470eeb027d43b97d02af6d9fd
+VRTK-GearVR-Test,"Merge pull request #1406 from thestonefox/refactor/snap-drop-zone-efficiency
+
+refactor(SnapDropZone): reduce GetComponent calls in update",b2f5b081fcc49299ada665cde75efba8af332259
+VRTK-GearVR-Test,"fix(Locomotion): correct teleport to destination point with dash
+
+There was an issue with Dash Teleporting to a Destination Point
+where the Destination Point would attempt to reseat the final
+position to the Destination Point destination location but this
+was happening too fast before the Dash Teleport had chance to
+finish lerping to it's final destination.
+
+The solution is to create a new way of overriding the final destination
+of the teleport before the teleport event has triggered and then this
+override is called from the destination point when the destination
+marker events occur.
+
+This now allows the destination point to only need one teleport event
+as it tells the teleporter the actual destination rather than just
+using the destination the pointer gave it.
+
+The dash teleport also lerps the rotation of the teleport now as well
+rather than just snapping to the new rotation which was incorrect.
+",5f4e36007bfe2837969037776d976ada61c03990
+VRTK-GearVR-Test,"fix(ControllerReference): prevent getting reference in OnEnable
+
+Because SteamVR disables the controllers at start up, it means that if
+the ControllerReference is attempted to be retrieved in an OnEnable
+method, then the controller reference will be invalid therefore
+causing issues with the rest of the script. The better solution is
+to use a Getter that attempts to get the reference a fresh every
+time it is requested, as the lower level calls are all cached then
+this won't cause any slow down issues and will ensure the controller
+is available.
+",9a98d0997b2880a9a9590a5fcab7316490ec8635
+VRTK-GearVR-Test,"fix(DeviceFinder): headset type recognition
+
+The headset type recognition has a fixed list of known headsets.
+This list is missing a special Vive Pre model that is reported as
+""Vive DVT"".
+This fix adds that headset and modifies the recognition to also tell
+the user to report any new headset type so it can be added to VRTK.
+Additionally a slower check is done when a summarization is
+requested to support types VRTK doesn't know about yet.
+
+This fixes #1113.
+",90fb4979663ee3d1dc2dc6acabff79521fa23632
+VRTK-GearVR-Test,"feat(ControllerReference): add new way of referencing controllers
+
+Previously, controller calls were referenced in a number of ways from
+utilising the controller's id, to passing a game object of either the
+actual controller game object or the script alias game object.
+
+This meant that ways to call certain methods was fragmented and lead
+to confusing different options between methods.
+
+The new ControllerReference script is used to get a reference to
+a controller based on any number of things such as an index, the
+actual GameObject, the script alias Object, the model Object or
+even the controller hand.
+
+Once a reference is retrieved, it can then access all of the elements
+of a controller, such as:
+
+ * index
+ * actual
+ * scriptAlias
+ * model
+ * hand
+
+The ControllerReference script also has a collection of static methods
+that are preferably used rather than needing to instantiate a new
+object as the static methods do some nice checking to make sure
+the ControllerReference is valid.
+
+The Controller References are also cached for performance and
+different instances of a Controller Reference object can be compared
+as a custom comparator has been provided that compares on the index
+of the controller which would always be universally unique.
+
+A large collection of methods in the SDK implementations and SDK Bridge
+have been re-written to utilise the Controller Reference, whilst a
+collection of methods in the SDK Bridge have been deprecated and the
+relevant methods in the SDK implementations have been removed.
+
+All of the event payloads that passed a controller index around now
+pass a controller reference, with the index being deprecated.
+
+Added a basic test script to the Examples directory to test the
+functionality of the Controller Reference script to ensure it is
+all working as expected.
+",d564410ab1417aa8ef1e00390379e64e2240f249
+VRTK-GearVR-Test,"fix(Presence): ensure is moving isn't always toggled on in body phsyics
+
+The Body Physics script was continually toggling the isMoving parameter
+even when standing still due to the ray cast collection that checks to
+see if the user is walking over an uneven floor.
+
+This was because the system casts 2 rays down, 1 from the headset
+position and 1 just outside of the body collider and checks to see if
+the difference means an incline/decline has occured. The issue was
+that the headset rotation was affecting the forward direction of the
+second down cast.
+
+Another additional parameter has been added to allow the play area
+movement threshold to be determined to prevent the headset pushing
+the play area back if the headset is moved very slowly.
+
+The code has also been cleaned up to make it easier to read.
+",8add2f367ba03e2ac23fda9f2eebdc642a95bdbe
+VRTK-GearVR-Test,"fix(ControllerEvents): ensure axis events take place on small changes
+
+Previously, the touchpad axis would not update if the touchpad was
+touched slowly creating a small delta because the previous touchpad
+axis state was always being updated even if a change hadn't occured.
+
+The fix is to ensure that the previous touchpad axis state is only
+updated when the touchpad axis has actually changed. This allows for
+smaller movements to be registered still.
+
+The Touchpad Axis Change event is also only emitted now when the
+touchpad is being touched as it would previously emit when the touchpad
+was released causing an additonal axis event change that wasn't
+required. The Trigger and Grip axis change events also have their axis
+value forced to `0f` now if the axis is no longer being touched as
+sometimes the controller hardware could report an untouch of a button
+but the axis was still reporting a value over 0f which seems wrong.
+",64461f829035b128097588dc440427800cd42007
+VRTK-GearVR-Test,"feat(Locomotion): add falling deceleration to MoveInPlace
+
+The MoveInPlace script now has a separate deceleration setting for when
+the player is falling giving a more refined feel to falling off ledges
+and not abruptly slowing down.
+",f659edd3d0c8385ea01bf1d315e3acb54a11d4fd
+VRTK-GearVR-Test,"feat(Locomotion): add deceleration to MoveInPlace
+
+The MoveInPlace script now has a deceleration parameter that
+gradually slowed down when the engage button is released rather than
+just immediately stopping.
+",7a1df514a6f514e13c793bb92de7b338eb22d24a
+VRTK-GearVR-Test,"fix(Interaction): parent of the outline highlighter cloned object
+
+Change the parent of the OutlineObjectCopyHighlighter cloned object to
+the same parent as the original object.
+
+Change the parent setting to not re-compute world position.
+
+Change the transform assignments from world to local (faster), because
+now the parent is the same.
+
+The OutlineObjectCopyHighlighter cloned object needs to have the
+parent set to the same parent of the customOutlineModel to exactly
+match its shape. Even the PR #828 still causes problems with a hierarchy
+of game objects with different scaling (e.g customOutlineModel with its
+own scaling as child of the game object with its own scaling, holding
+the OutlineObjectCopyHighlighter component).
+",af45d441efe47fc534db5ee14297d07d24423b48
+VRTK-GearVR-Test,"feat(Locomotion): add speed multiplier button to touchpad walking
+
+The Touchpad Walking script now has an option to press an additional
+button to activate a speed multiplier which if is set to a number
+above 1f then it will speed up the movement, however if it is set
+below 1f then it will slow movement down.
+",a57af77675291ceee5f4eaf682c70e7deabbbdc3
+VRTK-GearVR-Test,"perf(ControllerEvents): don't create garbage on vector comparison
+
+Two `Vector2`s were compared by using a string based method which
+creates garbage on every call which decreases performance. The solution
+is to do it without using strings and only relying on stack allocated
+structs.
+Thanks to @reznovvr for this performance fix.
+",a491404cf6ba1e58fbd9c5a28e67a4907badcbf6
+VRTK-GearVR-Test,"feat(Interaction): allow interactable objects to be disabled
+
+As the Interactable Object script executes an Update and Fixed Update
+it can cause performance issues when many interactable objects are
+within a scene and active. The Update and Fixed Update only need to
+execute if the object is actively being interacted with so a new
+option of `Disable On Idle` has been added and if it is set to `true`
+then when the Interactable Object is not being interacted with then
+the Interactable Object script will be disabled meaning the Update
+and Fixed Update methods are not executed each frame.
+
+It may be required to ensure the Interactable Object is always running
+the Update and/or Fixed Update method so in these cases the `Disable On
+Idle` method should be set to false, as demonstrated in the example
+scene `006_Controller_UsingADoor`.
+",d2002e0eed66e5e12a5217d19bc61edb1cb4696d
+VRTK-GearVR-Test,"perf(AdaptiveQuality): increase render scale faster if possible
+
+This change doubles the increased amount of the render scale level if
+the framerate was good for many frames.
+",773e5f23c5dd5543b4f18676a838c3b5e4eb5293
+VRTK-GearVR-Test,"perf(AdaptiveQuality): increase render scale later
+
+Increasing the render scale after just 3 cheap frames is too soon.
+Checking the last 6 frames seems to reduce the scale levels getting
+changed too much, resulting in reduced performance.
+",aae9c903e0267c84aaf850f4e8fc026367b0e4be
+VRTK-GearVR-Test,"fix(Interaction): remove limiting max angular velocity on throw
+
+The Throw section of the Interact Grab script would limit the
+`maxAngularVelocity` of the rigidbody to the current `angularVelocity`
+of the thrown object, this is from the original SteamVR_TestThrow
+script and assuming it is there to lock the rotation of the object
+to the initial spin, but it would seem that an object should be
+able to continue to spin faster if required.
+
+Also, doing this breaks the `Track_Object` grab mechanic as it prevents
+it from being rotated at a normal speed once dropped.
+",7339f353d585a45cb5c7df3e73cd4a4fb9735838
+VRTK-GearVR-Test,"feat(Events): add unity events helper scripts for delegate events
+
+The toolkit uses C# delegates to raise events, however, Unity Events
+provide a nice inspector interface (but come at a performance cost) so
+Unity Event helper scripts have been added that can be used to extend
+the relevant script that is using a C# delegate to provide the benefit
+of Unity Events but optionally to remove the requirement of the
+performance overhead.
+",b5f9b10e219d617296af53f1403a06e8e51bb042
+VRTK-GearVR-Test,"feat(Controller): add ability to get controller velocity
+
+The Controller Events now has a method for getting the current velocity
+and angular velocity of the controller.
+
+The sword example has been updated to utilise this new velocity to
+determine how fast the sword is being swung to determine the collision
+force.
+",283155cfffc00a4431f248ed0c49d90038a1abd9
+VRTK-GearVR-Test,"feat(Interaction): add grab precognition for catching objects easier
+
+If an object is falling very fast then it is difficult to press the
+grab button on the controller at the right time due to human reflexes
+being an issue. The Grab Precognition parameter on the Interact Grab
+script allows for a small window of time from the point of the grab
+button being pressed to when the object has to collide with the
+controller. If the object collides within the given time frame then
+the grab action is successful. This makes it easier for catching items
+as they fall fast, or the ability to swipe and grab an item without
+being particualrly careful with the grab motion.
+",d792617ebf24b740bcfe8039d9a468bee7d4dcfd
+VRTK-GearVR-Test,"fix(CameraRig): add movement deadzone to prevent walking glitch
+
+The Touchpad Walking script had an issue where the speed variable
+would not completely reset after releasing the touchpad meaning the
+CameraRig would slide slowly across the floor as a value was still
+present. This fix adds a deadzone margin to zero the speed variable
+if it falls between this margin to prevent the sliding effect.
+",924eb63ca8696c7a799f07752615db0bf1d25bab
+VRTK-GearVR-Test,"feat(Movement): add ability to change play area Y on mesh colliders
+
+It is now possible to move up and down mesh colliders by walking in
+the play area and the mesh below will affect the Y of the play area.
+
+It has an adverse effect of not doing the blink on fast movements
+such as falling from a mesh because it's not an actual teleport but
+a walk within game space.
+",39e91b82314b98f79ac2ce56f918705004279487
+wrapVR," Adding a way to control the OVR performance / FFR levels from the VRCapMgr.
+",5ca29e1e7d86fe3ac36bd9a933ca72f59ee57990
+XRTK-Core,"Add support for input and gestures for hand controllers (#552)
+
+* Delete baked lighting settings for base
+
+* Fix ControllerPopupWindow NRE
+
+* Implement internal is grabbing update
+
+* Disable hand meshing by default and assign tracked poses to test profile
+
+* Add IsValidCollision extension to colliders
+
+* Feature/pni change requests (#577)
+
+* Update ColliderExtensions.cs
+
+* Update CollisionExtensions.cs
+
+* updated submodules
+
+* updated sdk
+
+* updated sdk
+
+* Cleanup namespace
+
+* Better fallback pointer pose calculation
+
+* Introduce hand rendering mode
+
+* Implement runtime rendering mode switch
+
+* Update submodules
+
+* Start new hands examples room
+
+* Add canvas UI and 3D Buttons station
+
+* Show button stations result
+
+* Implement set rendering mode station
+
+* Added more stations
+
+* Update submodules
+
+* updated wmr checkout
+
+* updated sdk
+
+* Update submodules
+
+* Add additive scene loader for hands demo scene
+
+* Restore base scene
+
+* Add simple physics demo station
+
+* Cleanup namespace
+
+* Cleanup hand examples a bit
+
+* Update stations
+
+* Implement runtime bounds mode selection
+
+* Update submodules
+
+* Update Ultraleap checkout
+
+* Update physics station
+
+* Update submodule
+
+* Update submodule
+
+* Fix UWP certficate error
+
+* Moved examples to examples repo
+
+* reset editor window options for hands
+
+* Implement pinch strength
+
+* Add pinch strength to hand controller interface
+
+* Update submoduules
+
+* Update SDK
+
+* Use array instead of list for tracked poses
+
+* Restructure pose recognition code
+
+* Improved variable naming
+
+* Add root pose to hand data
+
+* Set root pose for simulation
+
+* Fix joint rotations
+
+* Update SDK
+
+* Remove base converter and introduce Post Processor
+
+* Update data provider to use post processor
+
+* Optimize recognition
+
+* Introduce grip strength
+
+* Enable setters for post processor
+
+* Minor refactoring in post processor
+
+* Removed NONE joint
+
+* Rename joints
+
+* Update submodules
+
+* Extend default hand mappings
+
+* Sync simulation profiles
+
+* Reset popup window options for hands
+
+* Hand input and poses change request (#616)
+
+* Cleaned up RecordedHandJoint(s) to remove reference values
+
+removed null unity object lifetime bypass
+added better exceptions when starting simulated hand controller data provider and Simulated hand data converter
+
+* fixed missing line
+
+* updated sdk checkout
+
+* Implement grip pose
+
+* Adjust processor to joint enum renamings
+
+* updated sdk checkout
+
+* Introduce hand finger enum
+
+* Rename pose recognizer and implement frame throttle
+
+* Minor docs update
+
+* Implement finger curls
+
+* Add Oculus (Desktop) package back in for now
+
+* Disable debug log for grip calculations
+
+* updated tracked pose processor compare (#617)
+
+aesthetic and spell checking in hand controller
+
+Co-authored-by: Dino Fejzagic <dino.f@live.de>
+
+* Implement IMixedRealityHandController.TryGetFingerCurlStrength
+
+* Update SDK
+
+* Disable recognition for now
+
+* Add index curl constraint to isgripping detection
+
+* updated sdk checkout
+
+* updated SDK
+
+* updated sdk checkout
+
+* Implement recorded pose baking and update inspector
+
+* Update SDK
+
+* Remove handedness from hand data
+
+* Update Oculus
+
+* Fix baked data not persisted
+
+* Update SDK
+
+* Fix pose recognizer handedness issue
+
+* Improve pose processor
+
+* Fix IsPointing set to false when pinching
+
+* Update submodules
+
+* Update examples checkout
+
+* Do not pass tracked pose scriptable object outside of data provider
+
+* Update examples
+
+* Update examples
+
+* Fix potential NRE
+
+Co-authored-by: Stephen Hodgson <hodgson.designs@gmail.com>
+
+* Fix potential casting error
+
+Co-authored-by: Stephen Hodgson <hodgson.designs@gmail.com>
+
+* Fix formatting
+
+* Use for instead of foreach
+
+* Revert metro package version
+
+* Rename HandControllerPoseDefinition to HandControllerPoseProfile
+
+* Revert to ReordableList for tracked poses
+
+* Change HandData to be a struct
+
+* Update submodule
+
+* Update example module
+
+* Fix invalid simulated hand position when camera rotation is changed
+
+* Fix generic pointer pose invalid when camera rotated
+
+* Remove redundant properties in hand mesh data
+
+* Update submodules
+
+* Only update hand state if hand is tracked
+
+* Remove obsolete pose extensions
+
+* Introduce hand utilities for pose estimation
+
+* Update submodules
+
+* Implement TryGetHandMeshData
+
+* Remove HandData input event
+
+* Update submodule
+
+* Update submodules
+
+* Implement relativeTo paramter for TryGetJointPose
+
+* Fix IsPointing
+
+* Use TrackingState instead of bool for tracking state
+
+* Fix missed occurence of IsTracked
+
+* Update Oculus
+
+* Fix pointer pose
+
+* Update Oculus
+
+* Fix fallback pointer pose
+
+* Fix pose recognizer left/right issue
+
+* Update submodules
+
+* Remove tracked pose mapping (coming back later)
+
+* Fix hand velocity calculation
+
+* Fix local to world joint translation
+
+* Fix simulation mappings
+
+* Fix IsPointing after teleport
+
+* Update submodule
+
+* Fix simulated hand not reset on tracking loss
+
+* Fix simulated hand position after teleport
+
+* Update SDK
+
+* Update SDK
+
+* Update examples module
+
+* fixed some typos
+
+* updated oculus checkout
+
+* Update example checkout
+
+* Reset hand controller options window
+
+* Update submodules
+
+* fixed submodule checkouts
+
+* Remove tracked poses from hand data provider interface
+
+* Cache bounds arrays
+
+* Allow a bit more tolerance wit IsPointing
+
+* Update submodules
+
+* Update example
+
+* Update modules
+
+* Update submodules
+
+* Update oculus
+
+* Update WMR
+
+* Clean up gizmo meshes
+
+* Remove duplicate vertices in gizmo meshes
+
+* Update submodules and wmr package
+
+* Only apply default head height if not managed by device
+
+* Update submodules
+
+* Introduce IHandDataPostProcessor
+
+* Update submodules
+
+* Update WMR submodule
+
+Co-authored-by: Stephen Hodgson <hodgson.designs@gmail.com>
+Co-authored-by: Simon (Darkside) Jackson <darkside@zenithmoon.com>",24a757e1ea8405c45d4d721565e3d75c78de725a
+XRTK-Core,"optimized perf when looking up types by guid (#632)
+
+",9047a7da6c013b102e84d8847ad881f75334f3b6
+XRTK-Core,"Controller Mapping Profiles Refactor (#508)
+
+* re-implemented controller visualization
+
+* fixed profile generation
+
+* Added default constructors for controllers
+
+* fixed openVR controller instance creation
+
+* fixed interaction profile inspector
+
+* updated TryRenderController method
+
+Added Async counterpart in the interface
+
+* updated sdk checkout
+
+* fixed mouse x/y default mappings
+
+* updated axis processor menus
+
+* updated sdk checkout
+
+* Strip full asset path before we ask Unity for a unique name (paths should be relative to the project
+
+* Made the interaction mapping profile inspector even more awesome
+
+changed input processor to a base mixed reality profile to make sure it gets copied correctly on configure
+
+* updated sdk checkout
+
+* disabled controller popout window
+
+* filter input actions by selected axis type
+
+* cleaned up the constructors on MixedRealityInteractionMapping
+
+* made the input action settable for the interaction mapping
+
+* reverted quality settings change
+
+* fixed controller popout window
+
+* fixed some formatting in the controller popout window
+
+* always show the popout window
+
+* reverted removal of axis elements and fixed a bit of spacing issues
+
+* added profile fields
+
+* updated window with controller graphics
+
+fixed a bug with the mouse drag offset being miscalculated
+
+* Make labels fit perfect
+
+* Fixed simulated hand profile inspector and auto generation of default controller mappings
+
+* Fixed an issue with being able to set the simulated hand pose data in the inspector's default list property field
+
+* fixed navigation back to parent profile
+
+* Added missing field property in the interaction mapping profile inspector
+
+* updated all the profiles in the SDK
+
+* removed this error, it's okay if it's null sometimes
+
+* updated icon
+
+* Fixed some issues with the visualization profile inspector
+
+* updated a few of the controller popout window label locations
+
+* updated lumin checkout
+
+* Update XRTK-Core/Packages/com.xrtk.core/Inspectors/ControllerPopupWindow.cs
+
+* updated sdk
+
+* fixed change from browser
+
+* Aligned changes from pr
+
+* updated changes to reflect other open PRs
+
+* fixed inspector and updated speech data provider registrations
+
+* cleaned up references
+
+* removed unused file
+
+* reverted removal of asset menu for controller visualization profile
+
+* temporarily removed stateChangeType until we fully understand how we want to implement it and what exactly it does
+
+* commented out inspector change from last commit
+
+* updated input action
+
+* revert removal of menu attribute
+
+* Updated input processors context menus
+
+* updated sdk
+
+* updated sdk
+
+* Sorted a few interfaces and fixed namespaces
+
+* removed asset menus for input data providers. Most are auto generated anyway
+
+* removed input processor outside call
+
+* revert
+
+* revert
+
+* fixed hand controller rendering in uwp
+
+* Remove obsolete SetupDefaultInteractions (#515)
+
+* updated submodules
+
+* updated interaction mapping for base hand controller
+
+* updated touch controller
+
+* cleaned up references and updated sdk checkout
+
+* updated project settings
+
+* updated lumin checkout
+
+* updated sdk checkout
+
+* removed profile references from outside constructor
+
+* First pass at camera system refactor
+
+* put some files in their proper place
+
+* Added camera data provider
+
+* updated how we applied the head height
+
+* Fixed a race condition after we've reset the profile and started re-initialization
+
+Fixed platforms so they only return true outside of the editor
+
+* reverted some changes
+
+* added GameObject reference to camera rig
+
+* updated sdk
+
+* reverted quality settings change
+
+* updated sdk
+
+* fixed hand inspectors
+
+* updated sdk checkout
+
+* updated sdk checkout
+
+* updated lumin checkout
+
+* removed extra line
+
+* fixed merge conflict
+
+* Added a reference to the camera system since the toolkit static accessor comes back null when the application is either quitting or resetting
+
+* Added an optional flag to set the head height on all registered providers
+
+* moved logic about how we get main camera rig into the getter property itself instead of having it set on registration
+
+* removed the Enable call searching for main camera. Not lives in property accessor
+
+* updated wmr checkout
+
+* updated wmr checkout
+
+* updated boundary system to utilize enable and disable properly
+
+* fixed WMR Open VR controller initialization
+
+* updated base camera provider
+
+* refactored the platforms to include IsBuildTargetAvailible and IsBuildTargetActive
+
+Added configuration flag to determine if more than one data provider can be registered with a service per platform
+
+* Better inspector
+
+* reverted single service per platform
+
+* updated Icon
+
+* updated submodules
+
+* reverted inspector changes
+
+* fixed sdk checkout
+
+* updated submodules
+
+* better dropdown menu
+
+* optimized and made sure we call gui changed correctly
+
+* updated sdk checkout
+
+* reverted name change
+
+* Updated Service Locator
+
+Added IMixedRealityDataProvider.ParentService
+Added IMixedRealityService partent to all data provider constructors
+Updated IMixedRealityDataProvider.Priority to also include the parent's priority so it's ordered better in the registry
+Added Try prefix to all registration methods to conform to industry standard naming conventions
+Updated tests
+
+* updated sdk checkout
+
+* updated usage for TryRegisterServiceConfigurations
+
+* removed unused reference
+
+* Updated TryUnregisterService to also unregister any data providers it's a parent of
+
+Updated Unit Test to reflect changes
+
+* fixed head height for services that start at the origin
+
+* Added priority override to camera system
+
+* Change requests for controller provider inspectors (#526)
+
+* Add extension to render foldout with bold label
+
+* Implement simple view for controller mappings
+
+* Update indent levels for profile settings according to render pipeline reference layout
+
+* Cache GUIContent and toolbar options
+
+* Remove null elements
+
+* optimized Check Service Match
+
+* removed redundant type arg
+
+* updated wmr checkout
+
+* Apply the default head height settings if the camera's opacity flag changes
+
+* Made sure we're resetting the transforms of the visualizations for each system
+
+Fixed teleportation height
+
+* updated some documentation
+
+* updated wmr and sdk checkouts
+
+* removed oculus head height getting set in the controllers
+
+* removed adjustment of plays pace transform in ApplySettingsForDefaultHeadHeight when head height == 0
+
+* updated lumin checkout
+
+added virtual HeadHeight property
+
+* updated lumin checkout
+
+* updated sdk checkout
+
+* removed comment
+
+* updated sdk checkout
+
+* updated oculus checkout
+
+* updated submodule checkouts
+
+* updated submodule checkouts
+
+* Removed duplicated serialized fields for the camera data provider global settings.
+
+Instead we'll just create a default camera data provider profile and use it as our global settings
+
+* using the proper list of registered configurations
+
+cleaned up global override field assignments to be much simpler
+
+* added configuration foldout
+
+* Moved registered service configurations directly into input system profile
+
+updated input system foldouts to use the bold style
+
+* updated foldout label content to include the interface type this configuration expects
+
+* updated sdk checkout
+
+* updated sdk checkout
+
+* fixed skipping null interaction mapping field
+
+* cleaned up a reference
+
+* fixed multiple serialized field names in inherited inspector class
+
+* Added a way to render the simple controller mapping buttons in the main input system profile inspector
+
+* bail early if the controller mapping list is null
+
+* Updated windows controller type name to get the controller textures to show up correctly based on the type name
+
+* updated usage with configuration foldout
+
+* updated simulated controller type name to make texture lookup work
+
+updated the names of many controller textures to get them to match the controller type name
+updated the generic controller image to have both left and right hands
+updated the controller mapping aggregate list in the input system profile inspector to only add profiles if they're not already referenced
+
+* fixed a possible NRE
+
+updated the name of the holoLens input action button text
+
+* Added Oculus Go Controller line art
+
+updated fallback for controller texture
+
+* better filtering of duplicate controller mapping profiles
+
+* updated controller layouts and fixed a perf bug with action equality
+
+* disabled wisisyg
+
+* updated oculus checkout
+
+* updated oculus and sdk checkouts
+
+* Added platform overrides
+
+* removed debug
+
+* updated oculus checkout
+
+* updated wmr checkout
+
+* updated wmr assets
+
+* force the camera and all it's data providers to the highest priority
+
+* updated sdk checkout
+
+* updated sdk checkout
+
+* cleaned up controller popout window a bit more
+
+* fixed up oculus remote controller windows
+
+* updated oculus checkout and fixed platform definitions for all configurations
+
+* used camera parent transform instead of querying for camera system playspace
+
+* updated submodules
+
+* cleaned up docs
+
+cleaned up profile value assignments
+cleaned up magic numbers
+
+* Changed from input system refactor
+
+* Update XRTK-Core/Packages/com.xrtk.core/Inspectors/Profiles/BaseMixedRealityCameraDataProviderProfileInspector.cs
+
+* added camera cache fallbacks
+
+* reverted change
+
+* revert
+
+* don't try again
+
+* updated base profile inspector to handle null controller types a bit better
+
+* Update XRTK-Core/Packages/com.xrtk.core/Inspectors/Profiles/InputSystem/MixedRealityInputSystemProfileInspector.cs
+
+* fixed un-responsive input system profile inspector
+
+renamed OpenVRDataControllerDataProvider to OpenVRControllerDataProvider
+updated all subodules
+
+Co-authored-by: Dino Fejzagic <dino.f@live.de>",dcb7c3a8310c73893d11f5605472ad21570aac25
+XRTK-Core,"Spatial Awareness System Refactor (#528)
+
+* removed profile references from outside constructor
+
+* First pass at camera system refactor
+
+* put some files in their proper place
+
+* Added camera data provider
+
+* updated how we applied the head height
+
+* Fixed a race condition after we've reset the profile and started re-initialization
+
+Fixed platforms so they only return true outside of the editor
+
+* reverted some changes
+
+* added GameObject reference to camera rig
+
+* updated sdk
+
+* reverted quality settings change
+
+* updated sdk
+
+* updated lumin checkout
+
+* removed extra line
+
+* Added a reference to the camera system since the toolkit static accessor comes back null when the application is either quitting or resetting
+
+* Added an optional flag to set the head height on all registered providers
+
+* moved logic about how we get main camera rig into the getter property itself instead of having it set on registration
+
+* removed the Enable call searching for main camera. Not lives in property accessor
+
+* updated wmr checkout
+
+* updated boundary system to utilize enable and disable properly
+
+* updated base camera provider
+
+* refactored the platforms to include IsBuildTargetAvailible and IsBuildTargetActive
+
+Added configuration flag to determine if more than one data provider can be registered with a service per platform
+
+* Better inspector
+
+* reverted single service per platform
+
+* updated Icon
+
+* updated submodules
+
+* reverted inspector changes
+
+* fixed sdk checkout
+
+* updated submodules
+
+* better dropdown menu
+
+* optimized and made sure we call gui changed correctly
+
+* updated sdk checkout
+
+* reverted name change
+
+* Updated Service Locator
+
+Added IMixedRealityDataProvider.ParentService
+Added IMixedRealityService partent to all data provider constructors
+Updated IMixedRealityDataProvider.Priority to also include the parent's priority so it's ordered better in the registry
+Added Try prefix to all registration methods to conform to industry standard naming conventions
+Updated tests
+
+* updated sdk checkout
+
+* updated usage for TryRegisterServiceConfigurations
+
+* removed unused reference
+
+* Updated TryUnregisterService to also unregister any data providers it's a parent of
+
+Updated Unit Test to reflect changes
+
+* fixed head height for services that start at the origin
+
+* Added priority override to camera system
+
+* optimized Check Service Match
+
+* removed redundant type arg
+
+* updated wmr checkout
+
+* Apply the default head height settings if the camera's opacity flag changes
+
+* Made sure we're resetting the transforms of the visualizations for each system
+
+Fixed teleportation height
+
+* updated some documentation
+
+* updated wmr and sdk checkouts
+
+* removed oculus head height getting set in the controllers
+
+* removed adjustment of plays pace transform in ApplySettingsForDefaultHeadHeight when head height == 0
+
+* updated lumin checkout
+
+added virtual HeadHeight property
+
+* updated lumin checkout
+
+* updated sdk checkout
+
+* Fixed spatial awareness system transforms
+
+updated wmr and lumin observers to work with updated camera system changes
+fixed additional component inspector
+
+* removed comment
+
+* updated sdk checkout
+
+* updated oculus checkout
+
+* updated submodule checkouts
+
+* Removed duplicated serialized fields for the camera data provider global settings.
+
+Instead we'll just create a default camera data provider profile and use it as our global settings
+
+* removed redundant physics layer override setting
+
+Added global surface observer profile
+
+* added configuration foldout
+
+* updated foldout label content to include the interface type this configuration expects
+
+* updated sdk checkout
+
+* updated usage with configuration foldout
+
+* fixed oculus checkout
+
+* updated oculus checkout
+
+* updated oculus and sdk checkouts
+
+* Added platform overrides
+
+* removed debug
+
+* updated oculus checkout
+
+* updated sdk checkout
+
+* updated oculus checkout and fixed platform definitions for all configurations
+
+* used camera parent transform instead of querying for camera system playspace
+
+* updated submodules
+
+* cleaned up docs
+
+cleaned up profile value assignments
+cleaned up magic numbers
+
+* Changed from input system refactor
+
+* Update XRTK-Core/Packages/com.xrtk.core/Inspectors/Profiles/BaseMixedRealityCameraDataProviderProfileInspector.cs
+
+* added camera cache fallbacks
+
+* spaced out items in spatial awareness profile and updated some license headers
+
+* updated submodules",fae2092f99a46920fe6dbe4f23c334bec40fa14a
+XRTK-Core,"Camera System Refactor (#517)
+
+* removed profile references from outside constructor
+
+* First pass at camera system refactor
+
+* put some files in their proper place
+
+* Added camera data provider
+
+* updated how we applied the head height
+
+* Fixed a race condition after we've reset the profile and started re-initialization
+
+Fixed platforms so they only return true outside of the editor
+
+* reverted some changes
+
+* added GameObject reference to camera rig
+
+* updated sdk
+
+* reverted quality settings change
+
+* updated sdk
+
+* updated lumin checkout
+
+* removed extra line
+
+* Added a reference to the camera system since the toolkit static accessor comes back null when the application is either quitting or resetting
+
+* Added an optional flag to set the head height on all registered providers
+
+* moved logic about how we get main camera rig into the getter property itself instead of having it set on registration
+
+* removed the Enable call searching for main camera. Not lives in property accessor
+
+* updated wmr checkout
+
+* updated boundary system to utilize enable and disable properly
+
+* updated base camera provider
+
+* refactored the platforms to include IsBuildTargetAvailible and IsBuildTargetActive
+
+Added configuration flag to determine if more than one data provider can be registered with a service per platform
+
+* Better inspector
+
+* reverted single service per platform
+
+* updated Icon
+
+* updated submodules
+
+* reverted inspector changes
+
+* fixed sdk checkout
+
+* updated submodules
+
+* better dropdown menu
+
+* optimized and made sure we call gui changed correctly
+
+* updated sdk checkout
+
+* reverted name change
+
+* Updated Service Locator
+
+Added IMixedRealityDataProvider.ParentService
+Added IMixedRealityService partent to all data provider constructors
+Updated IMixedRealityDataProvider.Priority to also include the parent's priority so it's ordered better in the registry
+Added Try prefix to all registration methods to conform to industry standard naming conventions
+Updated tests
+
+* updated sdk checkout
+
+* updated usage for TryRegisterServiceConfigurations
+
+* removed unused reference
+
+* Updated TryUnregisterService to also unregister any data providers it's a parent of
+
+Updated Unit Test to reflect changes
+
+* fixed head height for services that start at the origin
+
+* Added priority override to camera system
+
+* optimized Check Service Match
+
+* removed redundant type arg
+
+* updated wmr checkout
+
+* Apply the default head height settings if the camera's opacity flag changes
+
+* Made sure we're resetting the transforms of the visualizations for each system
+
+Fixed teleportation height
+
+* updated some documentation
+
+* updated wmr and sdk checkouts
+
+* removed oculus head height getting set in the controllers
+
+* removed adjustment of plays pace transform in ApplySettingsForDefaultHeadHeight when head height == 0
+
+* updated lumin checkout
+
+added virtual HeadHeight property
+
+* updated lumin checkout
+
+* updated sdk checkout
+
+* removed comment
+
+* updated sdk checkout
+
+* updated oculus checkout
+
+* updated submodule checkouts
+
+* Removed duplicated serialized fields for the camera data provider global settings.
+
+Instead we'll just create a default camera data provider profile and use it as our global settings
+
+* added configuration foldout
+
+* updated foldout label content to include the interface type this configuration expects
+
+* updated sdk checkout
+
+* updated usage with configuration foldout
+
+* updated oculus checkout
+
+* updated oculus and sdk checkouts
+
+* Added platform overrides
+
+* removed debug
+
+* updated oculus checkout
+
+* updated sdk checkout
+
+* updated oculus checkout and fixed platform definitions for all configurations
+
+* used camera parent transform instead of querying for camera system playspace
+
+* updated submodules
+
+* cleaned up docs
+
+cleaned up profile value assignments
+cleaned up magic numbers
+
+* Changed from input system refactor
+
+* Update XRTK-Core/Packages/com.xrtk.core/Inspectors/Profiles/BaseMixedRealityCameraDataProviderProfileInspector.cs
+
+* added camera cache fallbacks",53e12458c4170471c0a0e81c3038051a21d72e41
+XRTK-Core,"Updated Service Locator (#524)
+
+* Updated Service Locator
+
+Added IMixedRealityDataProvider.ParentService
+Added IMixedRealityService partent to all data provider constructors
+Updated IMixedRealityDataProvider.Priority to also include the parent's priority so it's ordered better in the registry
+Added Try prefix to all registration methods to conform to industry standard naming conventions
+Updated tests
+
+* updated usage for TryRegisterServiceConfigurations
+
+* removed unused reference
+
+* Updated TryUnregisterService to also unregister any data providers it's a parent of
+
+Updated Unit Test to reflect changes
+
+* optimized Check Service Match
+
+* removed redundant type arg",245c4a1078f351327b20046f979f5168a51a212f
+XRTK-Core,"Dev/platform refactor (#521)
+
+* refactored the platforms to include IsBuildTargetAvailible and IsBuildTargetActive
+
+Added configuration flag to determine if more than one data provider can be registered with a service per platform
+
+* Better inspector
+
+* reverted single service per platform
+
+* updated Icon
+
+* reverted inspector changes
+
+* fixed sdk checkout
+
+* better dropdown menu
+
+* optimized and made sure we call gui changed correctly
+
+* reverted name change
+
+* updated sdk checkouts",30a29b90ad395077a352be986be82266970d1d4e
+XRTK-Core,"Transform Extension Collider and Bounds Calculation Performance Update (#448)
+
+* updated GetColliderBounds to reference the colliders it's using to get the bounds
+
+Added another SetCollidersActive override extension method that also uses a reference to the colliders used
+
+* updated SDK checkout
+
+* Update XRTK-Core/Packages/com.xrtk.core/Extensions/TransformExtensions.cs
+
+* added more docs
+",6ed2030d033708702e6bff609a7f4bd5da0bb76a
+XRTK-Core,"Cleaned up and optimized the string extensions class (#301)
+
+",88b9d8796a028e16ef7a0a1dfcdffed7e6f5cdde
+XRTK-Core,"cleaned up Vector2 interaction mapping with faster code (#142)
+
+misc perf fixes using cached values in multiple classes",20c4e565db95af3be6eba10e46902f41d824155f
+XRTK-Core,"Fixed a problem with setting the wrong flag in boundary system property.
+Misc performance changes.
+",db77232817a511610cc46a7bc0e35c20d9cd6310
+Zinnia.Unity,"fix(Collisions): only track active containing transform collisions
+
+The ActiveCollisionsContainer was tracking every collision between
+nested colliders due to changes in how the CollisionNotifier worked
+but this caused issues as the active collisions should only be based
+on the overall containing colliding Transform otherwise unwanted
+artifacts are produced such as untouch events when moving between
+colliders even though the object is still fundamentally being touched.
+
+This then had a compound affect on publishing to all of the nested
+colliders which would cause performance issues.
+
+The fix is to track each individual collision that is received from
+the CollisionNotifier but to keep a dictionary of which collisions are
+associated to the overall containing Transform. This way the
+ActiveCollisionsContainer logic and events can be limited to only
+happen when a completely new collision on another containing Transform.
+
+This brings the functionality back in line with how it worked before
+the CollisionNotifier changes, whilst honouring the changes to the
+ability to allow a Collider to be disabled and to tell the
+CollisionTracker that the collision has ended.
+",9d32c9e7ea55372e6ff85d1a5fc04c497796503b
+Zinnia.Unity,"fix(Collision): stop collisions when either side is disabled
+
+There is an issue in Unity where when two objects are colliding will
+create a collision started event, but whilst the objects are
+intersecting, if one of the objects is disabled then Unity does not
+consider this to stop the collision between the two objects so no
+OnCollisionExit or OnTriggerExit occurs. However, if the disabled
+object is re-enabled and is still in the same intersecting position
+then Unity will consider this a new Enter event.
+
+This causes a problem for the CollisionTracker as it means the state
+of the tracker can become out of sync. If a collision starts twice
+but no stop was called between, then the tracked collision state is
+not valid. This would then have knock on effects in usages such as
+the ActiveCollisionsContainer where a started collision is treated
+as an active collision, but then if the object is disabled then
+no stopped collision occurs and therefore that would still be
+considered as an active collision.
+
+To fix this issue and work around the shortcomings of Unity, a new
+component is added at runtime to the GameObject that contains the
+collider that is colliding with the CollisionTracker. This new
+component then monitors the disabled state of the GameObject and upon
+that GameObject becoming disabled will stop the collision manually
+on the linked CollisionTracker. It will also then remove any traces
+of the magically created component.
+
+The CollisionTracker now also tracks any colliders it may be
+intersecting with and therefore if the CollisionTracker is disabled
+then any collider it may be linked to also has the Collision Stopped
+event emitted for to ensure both sides of the collision adhere to the
+disabled state.
+
+This new functionality is optional and can be turned off by the `Stop
+Collisions On Disable` property, which can only be set at edit time to
+prevent fundamental state getting out of sync if it was changed at
+runtime.
+
+The `AddComponent` and `Destroy` are used over a pooling method because
+these only occur on the `Enter/Exit` events so are not firing all the
+time and therefore performance hits should be reduced. But also,
+pooling would create a large set of GameObjects for each
+CollisionTracker and they would all have to independently manage these
+pools themselves resulting in a potential large number of pooled
+GameObjects being created on scene start, which would have a potential
+much larger impact on initial performance.
+
+The tests have been updated to showcase the issue of disabling a
+GameObject on either side of the collision now can successfully result
+in the Stopped event being emitted.
+",102aa52870d40345102a05274335b547c37c38a7
+Zinnia.Unity,"perf(Tracking): don't apply transform properties if unchanged
+
+`TransformPropertyApplier` has been updated to bail out early if the
+target state requires no change of the current state to save
+performance. The events will not be raised in this case to ensure
+listeners are also not running any logic until a state change
+occurs.
+",e4336f81004e46977329b3121afd03911ee5e07a
+Zinnia.Unity,"perf(Cast): use non-allocating physics queries
+
+The `Physics` API allows querying the physics system without doing
+any new (heap) allocations. As physics queries are often run each
+frame (or even more often, depending on the fixed time step) this
+change improves performance by ensuring a single array of results is
+used. By making this array fixed in size it is now allocated just
+once on startup and is then used in all queries. Because the array
+is potentially bigger than the actual results of a query the API has
+been changed to return an `ArraySegment` instead. Callers of this
+API need to use the copy API available on the `ArraySegment` type if
+they intend to mutate the returned array (found inside the segment)
+as it will be reused for other queries. The `SurfaceLocator` has
+been changed to use a new sort method that is offered by a new type.
+This new method offers a fast-path implementation for sorting an
+array because no regular `Array.Sort` overload exists that allows
+passing a concrete `Comparison` instead of a boxed `IComparer` that
+*also* offers a start and count parameter.",c555111d215e6dae9e3a8f8baf485020b4d07b89
+Zinnia.Unity,"perf(general): reuse collections and yield instructions
+
+To improve performance one of the goals is to reduce heap
+allocations to a minimum, especially when they are done for each
+rendered frame. This change ensures types reuse heap allocated
+instances wherever possible, as long as they are used more than
+once.
+",324b52b75014d4f2fd4120212fbb7eedcae5a90a
+Zinnia.Unity,"chore(Dependencies): update Malimbe to version 9.4.1
+
+The latest Malimbe comes with bug fixes, performance improvements
+and new features. Undo operations for fields that have change
+handlers are now allowed, but a warning explains to not do them at
+runtime as the change handlers won't be called for undo/redo
+operations.
+",bb1a24c39aee0b22178117510bd3c9efa599f9e1
+Zinnia.Unity,"chore(Dependencies): update Malimbe to version 9.4.0
+
+The latest Malimbe comes with bug fixes, performance improvements
+and new features. Undo operations for fields that have change
+handlers are now allowed, but a warning explains to not do them at
+runtime as the change handlers won't be called for undo/redo
+operations.
+",7198601cd3394ca9c086117aa62460cab0cc3c13
+Zinnia.Unity,"feat(Process): randomize the start time for interval running
+
+While the interval setting on processes allows to improve
+performance by doing work less often, there was still an issue in
+case many processes were running at the same time. This was
+primarily happening for objects already in the scene at startup of
+the play session. Instead of saving performance by running processes
+less often one could now have performance issues due to ""spikes"" as
+multiple processes all ran at the same time. This change improves on
+the interval behavior by introducing a randomization to the
+calculation of the target time of a process. Once the first process
+call has been done it won't be randomized any further automatically,
+but users are able to call the same randomization logic in form of a
+newly added method when needed.
+",572b3f23685d322dc29cf2187db360142169d6de
+Zinnia.Unity,"chore(Dependencies): update Malimbe to version 9.2.2
+
+The latest Malimbe comes with a fix to inspector performance as well
+as changes to allow better customization of the inspector if used by
+subclassing.",653f213fc5bbd57e5afac8f89703f240ab3cd4b0
+Zinnia.Unity,"perf(Editor): make members static where possible
+
+Static members are able to be optimized better by the compiler and
+also reduce the memory footprint of an instance of the type. This
+change uses the `static` keyword where possible.
+",4d7276f23125969023f559ee3f891d08503df0c4
+Zinnia.Unity,"perf(general): make fields read-only where possible
+
+The compiler can optimize usages of read-only fields in comparison
+to mutable ones. This change ensures the `readonly` keyword is
+applied to all fields that can be read-only.
+",03e9b860facb1ea5b14ba7679e77a27103534425
+Zinnia.Unity,"perf(general): remove empty statements
+
+Empty statements are redundant and while they don't incur a
+performance penalty in a release build, they are wasting a CPU cycle
+in debug builds. This change removes them.
+",0fa48515b1cb08c80cdda440b119f85923f97a3d
+Zinnia.Unity,"perf(Editor): improve performance in Editor helpers
+
+The implementations for the Supyrb extensions and the type picker
+window have been improved to do less logic and less heap allocations
+while maintaining the same API and functionality.
+",39a86aa3bd97e8f75fd69252eee396acff12677a
+Zinnia.Unity,"perf(Pointer): reduce heap allocations by removing temp arrays
+
+Instead of creating temporary arrays of objects to enumerate over
+this change improves performance by getting rid of the array
+allocations. Since the objects that was enumerated over are known at
+compile-time the object's are adjusted manually, one by one instead
+of looping over them.
+",fb524d13a45d732cd63f5f29422cb7db57c1e4b9
+Zinnia.Unity,"chore(Dependencies): update Malimbe to version 8.2.3
+
+The latest Malimbe comes with fixes and a performance improvement to
+the Unity integration.
+",7d8e4f0bfdd78bb6eca9678783e128eba9b6be7d
+Zinnia.Unity,"perf(general): reduce heap allocations by removing LINQ usages
+
+Heap allocations are garbage-collected which is an issue for
+real-time applications. To ensure the best performance is available
+to a user of Zinnia this change removes most usages of LINQ.
+`foreach` loops are left in as there are no garbage allocations in
+recent versions of Unity thanks to the upgraded compiler it's
+targeting nowadays.
+",942c63232be0b7aabf52cdc998d3daae2ba18133
+Zinnia.Unity,"perf(general): expect collections to be non-null implicitly
+
+By ensuring that fields of collection type are initialized with a
+non-null value by default the codebase can expect non-null values to
+be used from there on. Instead of handling the rare case of the
+field holding the collection to be set to null it will now throw
+when accessing the field instead. This performance optimization
+removes the need for an extension method that would lead to
+garbage-collected allocations which have to be prevented in
+performance-critical contexts which can be anywhere as Zinnia is a
+general-purpose library. Thus the extension method has been deleted.
+",50e011d252320e69e41e79877b367cf17d5e4c29
+Zinnia.Unity,"feat(Velocity): ability to apply artificial velocities to an object
+
+The ArtificialVelocityApplier mimics rigidbody velocities by applying
+directional and rotational data to a Transform giving the impression
+the object is moving with applied velocity. It also has the ability
+to apply opposing drag forces to slow the velocity down over time.
+",893cc63bc60747b1f16314e642d2fe0cbac41f85
+Zinnia.Unity,"feat(Interactions): provide grab precognition option for Interactor
+
+The Interactor now has a standard grab precognition option to allow
+for easy set up of grab precognition, which is the mechanism where
+the grab action can be initiated before touching an object within
+a given time frame and if the object is touched within that time
+frame and the grab action is still true then a grab will occur.
+
+This aids in attempting to grab fast moving objects.
+",74c3b1f573a2478db7928e388c888acb37b98fed
+Zinnia.Unity,"feat(Tracking): allow chaining collision notifications
+
+To allow interactors like a controller to interact with an unlimited
+number of interactables performance has to be taken into
+consideration. Instead of all interactables taking part of Unity's
+physics notifications and checking whether the thing they collided
+with is an interactor they want to work with, this change allows to
+forward the collision events from the interactor to the interactable
+it's colliding with. To give the receiving side of a forwarded event
+all the needed information the sender of the forwarded collision
+notification is added to the `EventData`. A check against the
+forwarded collision's game object prevents an infinite loop when a
+collision would otherwise get forwarded to itself forever.
+
+Since the `CollisionTracker` always took part in the collision
+notifications via Unity message methods this change also splits the
+collision notification from the collision tracking by introducing a
+new superclass that only provides events to get emitted on calling
+its methods to do so. The existing tracker now subclasses this new
+class and emits the respective event in response to Unity notifying
+it about a collision.
+",19f2cb5ae21e187c70c911109e71f95bf683dccf
