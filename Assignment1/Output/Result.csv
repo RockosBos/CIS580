@@ -1,0 +1,37 @@
+Repo,Message,Commit
+EscapeMuseumVR,"refactor: Optimized the use of port animation
+",d43672e70735613321d08a5904513a995bd1a633
+virtual-museum-app,"Merge pull request #87 in DPVM/app from master to feature/BuildMuseum
+
+* commit '330f6828874c370739c7651350f7c2c17b95a5e0':
+  Fix loading of frame style
+  Test fixes, draw in frames automatically, frame style choice and a (for now) failed attempt at serializing that choice
+  Fix walking tests after Oculus implementation, add new style prefabs to catalog
+  Art frames, new styles and a lamp
+  Fixed android building after oculus integration
+  Finalized Oculus integration
+  Added preliminary Oculus support
+  Slower walking in Durovis VR, joysticks independent from DPI
+  Fix already registered virtual axes bug
+  This should fix the Switch VR button!
+  Just to be sure, I'll commit this as well
+  New settings
+  Unity changed these files automatically...
+  Fix walking tests after changes
+  Switch VR mode + hopefully fix joystick sensitivity...
+  Fix tabs to spaces, for sonar
+",63bf144bc73b2f9a65228c37fcefb16e412b2b22
+virtual-museum-app,"Merge pull request #81 in DPVM/app from feature/walking to master
+
+* commit '9b081814f37cd9669af544dd19a691625cf78170':
+  Slower walking in Durovis VR, joysticks independent from DPI
+",679dea76942e85f1bed6e3e397e87b4b360e1864
+virtual-museum-app,"Slower walking in Durovis VR, joysticks independent from DPI
+",9b081814f37cd9669af544dd19a691625cf78170
+virtual-museum-app,"Merge pull request #38 in DPVM/app from feature/BuildMuseum to master
+
+* commit 'b3823da35794be9eb19b3ad2a23ce86ea3b246f8':
+  Made drawing tiles fast again
+",7d42a82ace56af146ff3822571321382688ff52b
+virtual-museum-app,"Made drawing tiles fast again
+",b3823da35794be9eb19b3ad2a23ce86ea3b246f8
